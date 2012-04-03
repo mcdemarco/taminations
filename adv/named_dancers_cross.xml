@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+
+  <tam title="Beaus Cross"
+       from="Facing Couples"
+       formation="Facing Couples"
+       parts="" >
+    <path>
+      <Movement hands="left" beats="2" cx1="1" cy1="0" cx2=".8" cy2="-2" x2="4" y2="-2"
+                                       cx3="1" cx4="1" cy4="-.4" x4="2" y4="-.4" />
+    </path>
+    <path>
+      <move select="Stand" beats="2" hands="none"/>
+    </path>
+  </tam>
+
+  <tam title="Beaus Cross"
+       from="Normal Lines"
+       formation="Normal Lines"
+       parts="" >
+    <path>
+      <Movement hands="left" beats="2" cx1="1" cy1="0" cx2=".8" cy2="-2" x2="4" y2="-2"
+                                       cx3="1" cx4="1" cy4="-.4" x4="2" y4="-.4" />
+    </path>
+    <path>
+      <move select="Stand" beats="2" hands="none"/>
+    </path>
+    <path>
+      <Movement hands="left" beats="2" cx1="1" cy1="0" cx2=".8" cy2="-2" x2="4" y2="-2"
+                                       cx3="1" cx4="1" cy4="-.4" x4="2" y4="-.4" />
+    </path>
+    <path>
+      <move select="Stand" beats="2" hands="none"/>
+    </path>
+  </tam>
+
+  <tam title="Belles Cross"
+       from="Facing Couples"
+       formation="Facing Couples"
+       parts="" >
+    <path>
+      <move select="Stand" beats="2" hands="none"/>
+    </path>
+    <path>
+      <Movement hands="right" beats="2" cx1="1" cy1="0" cx2=".8" cy2="2" x2="4" y2="2"
+                                        cx3="1" cx4="1" cy4=".4" x4="2" y4=".4" />
+    </path>
+  </tam>
+
+  <tam title="Belles Cross"
+       from="Normal Lines"
+       formation="Normal Lines"
+       parts="" >
+    <path>
+      <move select="Stand" beats="2" hands="none"/>
+    </path>
+    <path>
+      <Movement hands="right" beats="2" cx1="1" cy1="0" cx2=".8" cy2="2" x2="4" y2="2"
+                                        cx3="1" cx4="1" cy4=".4" x4="2" y4=".4" />
+    </path>
+    <path>
+      <move select="Stand" beats="2" hands="none"/>
+    </path>
+    <path>
+      <Movement hands="right" beats="2" cx1="1" cy1="0" cx2=".8" cy2="2" x2="4" y2="2"
+                                        cx3="1" cx4="1" cy4=".4" x4="2" y4=".4" />
+    </path>
+  </tam>
+
+  <tam title="Wheel and Deal, Beaus Cross" formation="Two-Faced Line RH" group=" ">
+    <path numbers="1 4">
+      <move select="Run Right" beats="4" hands="right" scaleX="2" scaleY="2" offsetX="2" />
+      <Movement hands="left" beats="2" cx1="1" cy1="0" cx2=".8" cy2="-2" x2="4" y2="-2"
+                                       cx3="1" cx4="1" cy4="-.4" x4="2" y4="-.4" />
+    </path>
+    <path numbers="2 3">
+      <move select="U-Turn Right" beats="4" hands="left" offsetX="2" />
+      <move select="Stand" beats="2" hands="none"/>
+    </path>
+  </tam>
+
+</tamination>

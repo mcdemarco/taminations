@@ -1,0 +1,80 @@
+/*
+
+    Copyright 2009 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+ */
+
+.menutitle {
+  color: white;
+  background-color: #008000;
+  border-style: outset;
+  border-width: 3px;
+  border-color: #80ff80;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  width: 11%;
+}
+.menutitle-highlight {
+  color: white;
+  background-color: #00c000;
+  border-style: outset;
+  border-width: 3px;
+  border-color: #80ff80;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 4px solid gray;
+  border-right: 4px solid gray;
+  font-size: 12px;
+  font-family: arial, sans-serif;
+  background-color: #d4ffd4;
+ }
+
+.menutitlediv {
+  position: absolute;
+  z-index: 10;
+ }
+
+.menuitem {
+  color: black;
+  text-align: left;
+  cursor: pointer;
+  padding-right: 4px;
+  padding-left: 4px;
+  white-space: nowrap;
+ }
+
+.menuitem-highlight {
+  cursor: pointer;
+  padding-right: 4px;
+  padding-left: 4px;
+  white-space: nowrap;
+  background-color: yellow;
+ }
+
+.invisible {
+  visibility: hidden;
+ }

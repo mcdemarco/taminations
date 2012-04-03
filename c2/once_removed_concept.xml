@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<!DOCTYPE tamination SYSTEM "../tamination.dtd">
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+
+  <tam title="Once Removed Boys Run" group="Once Removed"
+        formation="Formation girl -2 3 0 boy -2 -1 180 girl -2 1 0 boy -2 -3 180">
+    <path>
+      <move select="Dodge Right" beats="5" scaleY="2"/>
+    </path>
+    <path>
+      <move select="Run Right" beats="5" scaleY="2"/>
+    </path>
+    <path>
+      <move select="Dodge Right" beats="5" scaleY="2"/>
+    </path>
+    <path>
+      <move select="Run Right" beats="5" scaleY="2"/>
+    </path>
+  </tam>
+
+  <tam title="Once Removed Chase Right" group="Once Removed" formation="Lines Facing Out" from="">
+  <path>
+    <move select="U-Turn Right" offsetX="-2"/>
+    <move select="Forward 2"/>
+    <move select="Run Right" beats="5" scaleY="2"/>
+  </path>
+  <path>
+    <move select="U-Turn Right" offsetX="-2"/>
+    <move select="Forward 2"/>
+    <move select="Run Right" beats="5" scaleY="2"/>
+  </path>
+  <path>
+    <move select="Run Right" beats="5" scaleY="2"/>
+    <move select="Forward 4"/>
+  </path>
+  <path>
+    <move select="Run Right" beats="5" scaleY="2"/>
+    <move select="Forward 4"/>
+  </path>
+  </tam>
+
+  <tam title="Once Removed Partner Trade" group="Once Removed" formation="Lines Facing Out">
+    <path>
+      <move select="Flip Left" beats="6" scaleY="2"/>
+    </path>
+    <path>
+      <move select="Flip Left" beats="6" scaleY="2"/>
+    </path>
+    <path>
+      <move select="Run Right" beats="6" scaleY="2"/>
+    </path>
+    <path>
+      <move select="Run Right" beats="6" scaleY="2"/>
+    </path>
+  </tam>
+
+  <tam title="Once Removed Pass the Ocean" group="Once Removed"
+       formation="Normal Lines">
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5"/>
+      <move select="Lead Right" beats="4" scaleX="3" scaleY="1.5"/>
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5"/>
+      <move select="Lead Right" beats="4" scaleX="3" scaleY="3.5"/>
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5"/>
+      <move select="Lead Left" beats="4" scaleY="2.5"/>
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5"/>
+      <move select="Lead Left" beats="4" scaleY=".5"/>
+    </path>
+  </tam>
+
+  <tam title="Once Removed Right and Left Thru" group="Once Removed"
+       formation="Double Pass Thru">
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Extend Right" scaleY=".5" />
+      <move select="Beau Wheel" scaleX="0.5"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Extend Right" scaleY=".5" />
+      <move select="Belle Wheel" scaleX="0.5"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Extend Right" scaleY=".5" />
+      <move select="Beau Wheel" scaleX="0.5"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Extend Right" scaleY=".5" />
+      <move select="Belle Wheel" scaleX="0.5"/>
+    </path>
+  </tam>
+
+  <tam title="Once Removed Slide Thru" group="Once Removed"
+       formation="Double Pass Thru">
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Right" offsetX="1"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Left" offsetX="1" offsetY="-1"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Right" offsetX="1"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Left" offsetX="1" offsetY="-1"/>
+    </path>
+  </tam>
+
+  <tam title="Once Removed Touch a Quarter" group="Once Removed"
+       formation="Double Pass Thru">
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Right" offsetX="1"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Right" offsetX="1" offsetY="-1"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Right" offsetX="1"/>
+    </path>
+    <path>
+      <move select="Extend Left" scaleY=".5" />
+      <move select="Forward 2" />
+      <move select="Quarter Right" offsetX="1" offsetY="-1"/>
+    </path>
+  </tam>
+
+  <tam title="Once Removed Walk and Dodge (from Columns)" group="Once Removed"
+       formation="Formation girl -1 3 90  boy -1 1 90  girl -1 -1 90  boy -1 -3 90">
+  <path numbers="1 8">
+    <move select="Dodge Right" beats="4"/>
+  </path>
+  <path numbers="2 7">
+    <move select="Dodge Right" beats="4"/>
+  </path>
+  <path numbers="3 6">
+    <move select="Forward 4"/>
+  </path>
+  <path numbers="4 5">
+    <move select="Forward 4"/>
+  </path>
+  </tam>
+
+  <tam title="Once Removed Walk and Dodge (from Lines)" group="Once Removed"
+       formation="Two-Faced Lines RH">
+    <path numbers="1 8">
+      <move select="Forward 4" hands="right"/>
+    </path>
+    <path numbers="2 7">
+      <move select="Forward 4" hands="left"/>
+    </path>
+    <path numbers="3 6">
+      <move select="Dodge Right" beats="4" hands="left" scaleY="2"/>
+    </path>
+    <path numbers="4 5">
+      <move select="Dodge Right" beats="4" hands="right" scaleY="2"/>
+    </path>
+  </tam>
+
+</tamination>

@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE tamination SYSTEM "../tamination.dtd">
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+
+  <tam title="Circle to a Wave"
+       from="Facing Couples"
+       formation="Facing Couples"
+       parts="" >
+    <path>
+      <move select="Eighth Right" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="both" beats="1.5"/>
+      <move select="Eighth Left" beats="3" offsetX="2.121" offsetY="2.121" />
+    </path>
+    <path>
+      <move select="Eighth Left" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="both" beats="1.5"/>
+      <move select="Eighth Right" beats="3" offsetX=".707" offsetY="2.121" />
+    </path>
+  </tam>
+
+  <tam title="Circle to a Wave"
+       from="Normal Lines" formation="Normal Lines">
+    <path>
+      <move select="Eighth Right" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Left" beats="3" offsetX="1.414" offsetY="1.414" />
+    </path>
+    <path>
+      <move select="Eighth Left" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Right" beats="3" offsetX="1.414" offsetY="1.414" />
+    </path>
+    <path>
+      <move select="Eighth Right" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Left" beats="3" offsetX="1.414" offsetY="1.414" />
+    </path>
+    <path>
+      <move select="Eighth Left" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Right" beats="3" offsetX="1.414" offsetY="1.414" />
+    </path>
+  </tam>
+
+  <tam title="Circle to a Wave"
+       from="Eight Chain Thru" formation="Eight Chain Thru">
+    <path>
+      <move select="Eighth Right" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Left" beats="3" offsetX="2.121" offsetY="2.121" />
+    </path>
+    <path>
+      <move select="Eighth Left"  />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Right" beats="3" offsetX=".707" offsetY="2.121" />
+    </path>
+    <path>
+      <move select="Eighth Right" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Left" beats="3" offsetX="2.121" offsetY="2.121" />
+    </path>
+    <path>
+      <move select="Eighth Left"  />
+      <move select="Counter Rotate Left 1.414 1.414" hands="gripboth" beats="1.5"/>
+      <move select="Eighth Right" beats="3" offsetX=".707" offsetY="2.121" />
+    </path>
+  </tam>
+
+
+  <!-- tam title="Concentric Circle to a Wave" group=" "
+       formation="Normal Lines">
+    <path>
+    </path>
+    <path>
+      <move select="Eighth Right" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="both" beats="1.5"/>
+      <move select="Eighth Left" beats="3" offsetX="2.121" offsetY="2.121" />
+    </path>
+    <path>
+      <move select="Eighth Left" offsetX="1" />
+      <move select="Counter Rotate Left 1.414 1.414" hands="both" beats="1.5"/>
+      <move select="Eighth Right" beats="3" offsetX=".707" offsetY="2.121" />
+    </path>
+    <path>
+    </path>
+  </tam -->
+  <!--
+    todo: as couples
+          concentric
+          all 4 couples (?)
+          tandem
+          stretch
+          phantom (C1)
+   -->
+
+</tamination>

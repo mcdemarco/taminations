@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<formations>
+  <formation match="tam/@formation[.='Column RH GBGB">
+    <text>Formation girl -3 -1 180  boy -1 -1 180  girl 1 -1 180  boy 3 -1 180</text>
+  </formation>
+
+  <!-- 4-dancer formations -->
+  <formation name="Facing Couples">
+    <text>Formation boy -2 1 0  girl -2 -1 0</text>
+  </formation>
+
+  <formation name="Couples Facing Out">
+    <text>Formation girl -2 1 180 boy -2 -1 180</text>
+  </formation>
+
+  <formation name="Two-Faced Line RH">
+    <text>Formation boy 0 3 0 girl 0 1 0</text>
+  </formation>
+
+  <formation name="Two-Faced Line LH">
+    <text>Formation boy 0 -1 0 girl 0 -3 0</text>
+  </formation>
+
+  <formation name="Box RH">
+    <text>Formation boy -2 1 0 girl -2 -1 180</text>
+  </formation>
+
+  <formation name="Box LH">
+    <text>Formation boy -2 1 180 girl -2 -1 0</text>
+  </formation>
+
+  <formation name="Wave RH">
+    <text>Formation boy 0 3 0 girl 0 1 180</text>
+  </formation>
+
+  <formation name="Wave LH">
+    <text>Formation boy 0 -3 0 girl 0 -1 180</text>
+  </formation>
+
+  <formation name="Wave RH GBBG">
+    <text>Formation girl 0 3 0 boy 0 1 180</text>
+  </formation>
+
+  <formation name="Wave LH GBBG">
+    <text>Formation girl 0 -3 0 boy 0 -1 180</text>
+  </formation>
+
+  <formation name="Diamond RH">
+    <text>Formation boy 0 3 0 girl 1 0 270</text>
+  </formation>
+
+  <formation name="Diamond LH">
+    <text>Formation boy 0 3 180 girl 1 0 90</text>
+  </formation>
+
+  <formation name="Diamond Facing">
+    <text>Formation boy 0 3 0 girl 1 0 90</text>
+  </formation>
+
+  <formation name="Diamond Facing RH">
+    <text>Formation boy 0 3 180 girl 1 0 270</text>
+  </formation>
+
+  <formation name="Single Double Pass Thru">
+    <text>Formation boy -3 0 0 girl -1 0 0</text>
+  </formation>
+
+  <formation name="Single Eight Chain Thru">
+    <text>Formation boy -3 0 0 girl -1 0 180</text>
+  </formation>
+
+
+  <!-- 8-dancer formations -->
+  <formation name="Static Square">
+    <text>Formation boy -3 1 0  girl -3 -1 0  boy 1 3 270  girl -1 3 270</text>
+  </formation>
+
+  <formation name="Static Heads Facing Out">
+    <text>Formation boy -3 -1 180  girl -3 1 180  boy 1 3 270  girl -1 3 270</text>
+  </formation>
+
+  <formation name="Static Facing Out">
+    <text>Formation boy -3 -1 180  girl -3 1 180  boy -1 3 90  girl 1 3 90</text>
+  </formation>
+
+  <formation name="Static MiniWaves RH">
+    <text>Formation boy -3 1 0  girl -3 -1 180  boy 1 3 270  girl -1 3 90</text>
+  </formation>
+
+  <formation name="Static BackToBack">
+    <text>Formation boy -2 0 0 girl -4 0 180 boy 0 2 270 girl 0 4 90</text>
+  </formation>
+
+  <formation name="Static Facing">
+    <text>Formation boy -4 0 0 girl -2 0 180 boy 0 4 270 girl 0 2 90</text>
+  </formation>
+
+  <formation name="Promenade">
+    <text>Formation boy 1.414 1.414 135  girl 2.121 2.121 135  boy 1.414 -1.414 45  girl 2.121 -2.121 45</text>
+  </formation>
+
+  <formation name="Promenade 2">
+    <text>Formation boy 2 0 90 girl 3 0 90 boy 0 2 180 girl 0 3 180</text>
+  </formation>
+
+  <formation name="Normal Lines">
+    <text>Formation boy -2 3 0  girl -2 1 0  boy -2 -1 0  girl -2 -3 0</text>
+  </formation>
+
+  <formation name="Lines Facing Out">
+    <text>Formation girl -2 3 180 boy -2 1 180 girl -2 -1 180 boy -2 -3 180</text>
+  </formation>
+
+
+  <formation name="Column RH GBGB">
+    <text>Formation girl -3 -1 180  boy -1 -1 180  girl 1 -1 180  boy 3 -1 180</text>
+  </formation>
+
+  <formation name="Column LH GBGB">
+    <text>Formation boy -3 -1 0  girl -1 -1 0  boy 1 -1 0  girl 3 -1 0</text>
+  </formation>
+
+  <formation name="Z RH GBBG">
+    <text>Formation girl -4 1 0 boy -2.5 1 0 boy -2.5 -1 180 girl -1 -1 180</text>
+  </formation>
+
+  <formation name="Magic Column RH">
+    <text>Formation girl -3 -1 0  boy -1 -1 180  girl 1 -1 180  boy 3 -1 0</text>
+  </formation>
+
+  <formation name="Magic Column LH">
+    <text>Formation girl -3 -1 180  boy -1 -1 0  girl 1 -1 0  boy 3 -1 180</text>
+  </formation>
+
+
+  <formation name="Ocean Waves RH BGGB">
+    <text>Formation boy -2 3 0  girl -2 1 180  girl -2 -1 0  boy -2 -3 180</text>
+  </formation>
+
+  <formation name="Ocean Waves LH BGGB">
+    <text>Formation boy -2 3 180  girl -2 1 0  girl -2 -1 180  boy -2 -3 0</text>
+  </formation>
+
+  <formation name="Ocean Waves RH GBBG">
+    <text>Formation girl -2 3 0  boy -2 1 180  boy -2 -1 0  girl -2 -3 180</text>
+  </formation>
+
+  <formation name="Ocean Waves LH GBBG">
+    <text>Formation girl -2 3 180  boy -2 1 0  boy -2 -1 180  girl -2 -3 0</text>
+  </formation>
+
+  <formation name="Ocean Waves RH BGBG">
+    <text>Formation boy -2 3 0 girl -2 1 180 boy -2 -1 0 girl -2 -3 180</text>
+  </formation>
+
+  <formation name="Ocean Waves LH BGBG">
+    <text>Formation boy -2 3 180 girl -2 1 0 boy -2 -1 180 girl -2 -3 0</text>
+  </formation>
+
+
+  <formation name="Circle">
+    <text>Formation boy -2.414 1 -22.5  girl -2.414 -1 22.5  boy 1 2.414 247.5 girl -1 2.414 292.5</text>
+  </formation>
+
+  <formation name="Alamo Wave">
+    <text>Formation boy -2.414 1 -22.5  girl -2.414 -1 202.5  boy 1 2.414 247.5 girl -1 2.414 112.5</text>
+  </formation>
+
+
+  <formation name="Two-Faced Lines RH">
+    <text>Formation boy -2 3 0 girl -2 1 0 girl -2 -1 180 boy -2 -3 180</text>
+  </formation>
+
+  <formation name="Two-Faced Lines LH">
+    <text>Formation girl -2 3 180 boy -2 1 180 boy -2 -1 0 girl -2 -3 0</text>
+  </formation>
+
+
+  <formation name="Thar LH Boys">
+    <text>Formation boy -1 0 270 girl -3 0 90 boy 0 -1 0 girl 0 -3 180</text>
+  </formation>
+
+  <formation name="Thar LH Girls">
+    <text>Formation girl -1 0 270 boy -3 0 90 girl 0 -1 0 boy 0 -3 180</text>
+  </formation>
+
+  <formation name="Thar RH Boys">
+    <text>Formation boy -1 0 90 girl -3 0 270 boy 0 -1 180 girl 0 -3 0</text>
+  </formation>
+
+
+  <formation name="Diamonds RH Girl Points">
+    <text>Formation boy 0 -3 180 girl -3 -2 90 boy 0 -1 0 girl 3 -2 270</text>
+  </formation>
+
+  <formation name="Diamonds LH Girl Points">
+    <text>Formation boy 0 -3 0 girl -3 -2 270 boy 0 -1 180 girl 3 -2 90</text>
+  </formation>
+
+  <formation name="Diamonds Facing Girl Points">
+    <text>Formation boy 0 -3 180 girl -3 -2 270 boy 0 -1 0 girl 3 -2 90</text>
+  </formation>
+
+  <formation name="Diamonds Facing LH Girl Points">
+    <text>Formation boy 0 -3 0 girl -3 -2 90 boy 0 -1 180 girl 3 -2 270</text>
+  </formation>
+
+  <formation name="Diamonds RH PTP Girl Points">
+    <text>Formation boy -1 -3 90 girl 0 -1 0 boy 1 -3 270 girl 0 -5 180</text>
+  </formation>
+
+  <formation name="Diamonds 3 and 1 Girl Points">
+    <text>Formation boy 0 -3 180 girl -3 -2 270 boy 0 -1 0 girl 3 -2 270</text>
+  </formation>
+
+  <formation name="Diamonds 3 and 1">
+    <text>Formation boy 0 -3 180 girl -3 -2 270 boy 0 -1 180 girl 3 -2 90</text>
+  </formation>
+
+  <formation name="Interlocked Diamonds RH Girl Points">
+    <text>Formation boy 0 -3 180 girl -3 -2 90 boy 0 -1 180 girl 3 -2 270</text>
+  </formation>
+
+  <formation name="Interlocked Diamonds LH Girl Points">
+    <text>Formation boy 0 -3 0 girl -3 -2 270 boy 0 -1 0 girl 3 -2 90</text>
+  </formation>
+
+  <formation name="Interlocked Diamonds RH PTP Girl Points">
+    <text>Formation boy -1 -3 90 girl 0 -1 180 boy 1 -3 270 girl 0 -5 180</text>
+  </formation>
+
+  <formation name="Interlocked Diamonds LH PTP Girl Points">
+    <text>Formation boy -1 -3 270 girl 0 -1 0 boy 1 -3 90 girl 0 -5 0</text>
+  </formation>
+
+
+  <formation name="Inverted Lines Centers In">
+    <text>Formation boy -2 3 180  girl -2 1 0  boy -2 -1 0  girl -2 -3 180</text>
+  </formation>
+
+  <formation name="Inverted Lines Centers Out">
+    <text>Formation boy -2 3 0  girl -2 1 180  boy -2 -1 180  girl -2 -3 0</text>
+  </formation>
+
+  <formation name="Concentric Diamonds RH">
+    <text>Formation boy 0 3 0  girl 0 1 0  boy 2 0 270  girl 4 0 270</text>
+  </formation>
+
+  <formation name="Concentric Diamonds Mixed">
+    <text>Formation boy 0 3 0  girl 0 1 180  boy 2 0 90  girl 4 0 270</text>
+  </formation>
+
+  <formation name="Quarter Tag">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy 0 -3 180 girl 0 -1 0</text>
+  </formation>
+
+  <formation name="Quarter Tag LH">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy 0 -3 0 girl 0 -1 180</text>
+  </formation>
+
+  <formation name="3/4 Tag">
+    <text>Formation girl -3 1 180 boy -3 -1 180 boy 0 -3 180 girl 0 -1 0</text>
+  </formation>
+
+  <formation name="3/4 Tag LH">
+    <text>Formation girl -3 1 180 boy -3 -1 180 boy 0 -3 0 girl 0 -1 180</text>
+  </formation>
+
+  <formation name="Quarter Lines RH">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy 0 1 0 girl 0 3 0</text>
+  </formation>
+
+  <formation name="Quarter Lines LH">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy 0 -1 0 girl 0 -3 0</text>
+  </formation>
+
+  <formation name="Quarter Wave RH">
+    <text>Formation boy -3 1 0 girl -3 -1 180 boy 0 -3 180 girl 0 -1 0</text>
+  </formation>
+
+  <formation name="Quarter Wave LH">
+    <text>Formation boy -3 1 180 girl -3 -1 0 boy 0 -3 0 girl 0 -1 180</text>
+  </formation>
+
+
+  <formation name="Double Pass Thru">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy -1 1 0 girl -1 -1 0</text>
+  </formation>
+
+  <formation name="Completed Double Pass Thru">
+    <text>Formation girl -3 1 180 boy -3 -1 180 girl -1 1 180 boy -1 -1 180</text>
+  </formation>
+
+  <formation name="Eight Chain Thru">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy -1 -1 180 girl -1 1 180</text>
+  </formation>
+
+  <formation name="Pass Thru">
+    <text>Formation        boy -3 1 0 girl -3 -1 0 boy -1 -1 180 girl -1 1 180</text>
+  </formation>
+
+  <formation name="Trade By">
+    <text>Formation girl -3 1 180 boy -3 -1 180 girl -1 -1 0 boy -1 1 0</text>
+  </formation>
+
+
+  <formation name="Two-Faced Tidal Line RH">
+    <text>Formation boy 0 3.5 0 girl 0 2.5 0 girl 0 1.5 180 boy 0 .5 180</text>
+  </formation>
+
+  <formation name="Two-Faced Tidal Line LH">
+    <text>Formation girl 0 3.5 180 boy 0 2.5 180 boy 0 1.5 0 girl 0 .5 0</text>
+  </formation>
+
+  <formation name="Tidal Line RH">
+    <text>Formation boy 0 -3.5 180 girl 0 -2.5 180 boy 0 -1.5 180 girl 0 -.5 180</text>
+  </formation>
+
+  <formation name="Tidal Line LH">
+    <text>Formation boy 0 -2.5 0 girl 0 -3.5 0 boy 0 -.5 0 girl 0 -1.5 0</text>
+  </formation>
+
+  <formation name="Tidal Wave RH BGGB">
+    <text>Formation boy 0 -3.5 180 girl 0 -2.5 0 girl 0 -1.5 180 boy 0 -.5 0</text>
+  </formation>
+
+  <formation name="Tidal Wave LH BGGB">
+    <text>Formation boy 0 -3.5 0 girl 0 -2.5 180 girl 0 -1.5 0 boy 0 -.5 180</text>
+  </formation>
+
+
+  <formation name="Hourglass RH BP">
+    <text>Formation boy -2 -3 180 girl -3 0 90 boy -2 3 0 girl 0 1 0</text>
+  </formation>
+
+  <formation name="Hourglass LH BP">
+    <text>Formation boy -2 -3 0 girl -3 0 270 boy -2 3 180 girl 0 1 180</text>
+  </formation>
+
+  <!-- Tweak galaxy points to avoid strange handholds -->
+  <formation name="Galaxy RH GP">
+    <text>Formation boy -1 -1 180 girl -3 0 90 boy -1 1 0 girl 0 3.1 0</text>
+  </formation>
+
+  <formation name="Galaxy LH GP">
+    <text>Formation boy -1 -1 0 girl -3 0 270 boy -1 1 180 girl 0 3.1 180</text>
+  </formation>
+
+
+  <formation name="Facing Blocks">
+    <text>Formation boy -3 1 0 girl -3 -3 0 boy -1 3 0 girl -1 -1 0</text>
+  </formation>
+
+  <formation name="Blocks Facing Out">
+    <text>Formation girl -3 1 180 boy -3 -3 180 girl -1 3 180 boy -1 -1 180</text>
+  </formation>
+
+  <formation name="Blocks RH">
+    <text>Formation boy -3 1 0 girl -3 -3 180 boy -1 3 0 girl -1 -1 180</text>
+  </formation>
+
+
+  <formation name="Butterfly RH">
+    <text>Formation boy -3 3 0 girl -3 -3 180 boy -1 1 0 girl -1 -1 180</text>
+  </formation>
+
+  <formation name="Butterfly LH">
+    <text>Formation boy -3 3 180 girl -3 -3 0 boy -1 1 180 girl -1 -1 0</text>
+  </formation>
+
+  <formation name="Butterfly In">
+    <text>Formation boy -3 3 0 girl -3 -3 0 boy -1 1 0 girl -1 -1 0</text>
+  </formation>
+
+  <formation name="Butterfly Out">
+    <text>Formation boy -3 -3 180 girl -3 3 180 boy -1 -1 180 girl -1 1 180</text>
+  </formation>
+
+  <formation name="Butterfly Chain Thru">
+    <text>Formation boy -3 3 0 girl -3 -3 0 boy -1 -1 180 girl -1 1 180</text>
+  </formation>
+
+  <formation name="Butterfly Trade By">
+    <text>Formation boy -3 -3 180 girl -3 3 180 boy -1 1 0 girl -1 -1 0</text>
+  </formation>
+
+  <formation name="O RH">
+    <text>Formation boy -3 1 0 girl -3 -1 180 boy -1 3 0 girl -1 -3 180</text>
+  </formation>
+
+  <formation name="O LH">
+    <text>Formation boy -3 1 180 girl -3 -1 0 boy -1 3 180 girl -1 -3 0</text>
+  </formation>
+
+  <formation name="O In">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy -1 3 0 girl -1 -3 0</text>
+  </formation>
+
+  <formation name="O Out">
+    <text>Formation girl -3 1 180 boy -3 -1 180 girl -1 3 180 boy -1 -3 180</text>
+  </formation>
+
+  <formation name="O Eight Chain Thru">
+    <text>Formation boy -3 1 0 girl -3 -1 0 boy -1 -3 180 girl -1 3 180</text>
+  </formation>
+
+  <formation name="O Trade By">
+    <text>Formation boy -3 -1 180 girl -3 1 180 boy -1 3 0 girl -1 -3 0</text>
+  </formation>
+
+
+  <!--  These are T-Bones, boys as trailers in a column and the girls facing out
+        DLDL is 'down,left,down,left' reading the bottom line from left to right  -->
+  <formation name="T-Bone DLDL">
+    <text>Formation girl -3 -1 270  boy -1 -1 180  girl 1 -1 270  boy 3 -1 180</text>
+  </formation>
+
+  <formation name="T-Bone RDRD">
+    <text>Formation girl -3 1 90  boy -1 1 180  girl 1 1 90  boy 3 1 180</text>
+  </formation>
+
+  <!--  More T-Bones  -->
+  <formation name="T-Bone URRD">
+    <text>Formation boy -1 3 0 girl -1 1 270 girl -1 -1 270 boy -1 -3 180</text>
+  </formation>
+
+  <formation name="T-Bone DLLU">
+    <text>Formation boy -1 3 180 girl -1 1 90 girl -1 -1 90 boy -1 -3 0</text>
+  </formation>
+
+  <formation name="T-Bone DRLD">
+    <text>Formation boy -1 3 180 girl -1 -1 90 boy -1 1 270 girl -1 -3 180</text>
+  </formation>
+
+  <formation name="T-Bone LUUR">
+    <text>Formation boy -1 3 90 girl 1 3 90 boy -1 1 0 girl -1 -1 0</text>
+  </formation>
+
+  <formation name="T-Bone LULU">
+    <text>Formation boy -1 3 90 girl -1 1 0 boy -1 -1 90 girl -1 -3 0</text>
+  </formation>
+
+  <formation name="T-Bone ULRU">
+    <text>Formation boy -1 3 0 girl -1 -1 270 boy -1 1 90 girl -1 -3 0</text>
+  </formation>
+
+
+  <formation name="T-Bone Couples">
+    <text>Formation boy -2 3 0 girl -2 1 0 girl -3 -2 270 boy -1 -2 270</text>
+  </formation>
+
+  <!--  Formations with phantoms  -->
+  <formation name="Phantom Formation In">
+    <text>Formation boy -2 3 0 girl -2 1 0 boy 3 2 270 girl 1 2 270 phantom -2 -1 0 phantom -2 -3 0</text>
+  </formation>
+
+  <formation name="Phantom Formation RH">
+    <text>Formation boy -2 3 0 girl -2 1 180 boy 3 2 270 girl 1 2 90 phantom -2 -1 0 phantom -2 -3 180</text>
+  </formation>
+
+  <formation name="Phantom Formation Two-Faced">
+    <text>Formation boy -2 3 0 girl -2 1 0 boy 1 2 90 girl 3 2 90 phantom -2 -1 180 phantom -2 -3 180</text>
+  </formation>
+
+  <formation name="Phantom Lines In">
+    <text>Formation boy 2 3 180 girl 2 1 180 boy 2 -1 180 girl 2 -3 180 phantom 2 5 180 phantom 2 -5 180</text>
+  </formation>
+
+  <formation name="Phantom Lines Out">
+    <text>Formation girl -2 3 180 boy -2 1 180 girl -2 -1 180 boy -2 -3 180 phantom -2 -5 180 phantom -2 5 180</text>
+  </formation>
+
+  <formation name="Phantom Waves RH">
+    <text>Formation boy 2 3 180  girl 2 1 0 boy 2 -1 180 girl 2 -3 0 phantom 2 5 0 phantom 2 -5 180</text>
+  </formation>
+
+  <formation name="Phantom Waves LH">
+    <text>Formation boy -2 1 0  girl -2 3 180 boy -1 -2 90 girl -3 -2 270</text>
+  </formation>
+
+  <formation name="Phantom Two-Faced RH">
+    <text>Formation boy -2 3 0 girl -2 1 0 girl -3 -2 270 boy -1 -2 270</text>
+  </formation>
+
+  <formation name="Tidal Line Girls Disconnected">
+    <text>Formation girl 0 -2.5 0 boy 0 -3.5 0 girl 0 -.5 0 boy 0 -1.5 0</text>
+  </formation>
+
+</formations>

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE tamination SYSTEM "../tamination.dtd">
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+  
+  
+  
+
+  <tam title="Spin the Windmill" from="Quarter Tag (Right)"
+    formation="Quarter Tag" parts="">
+    <path>
+      <move select="Quarter Right" />
+      <move select="Forward 2" />
+      <move select="Lead Left" beats="4" scaleX="3" scaleY="3" />
+      <move select="Lead Left" beats="4" scaleX="3" scaleY="2" />
+    </path>
+    <path>
+      <move select="Quarter Right" />
+      <move select="Lead Left" beats="4" scaleX="3" scaleY="3" />
+      <move select="Lead Left" beats="4" scaleX="3" scaleY="3" />
+      <move select="Forward 3" />
+    </path>
+    <path>
+      <move select="Swing Right" />
+      <move select="Swing Left" />
+      <move select="Cast Right" />
+    </path>
+    <path>
+      <move select="Swing Right" />
+      <move select="Stand" beats="3" />
+      <move select="Cast Right" />
+    </path>
+  </tam>
+
+  <tam title="Spin the Windmill" from="Lines (Forward)"
+    formation="Normal Lines" parts="">
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Lead Right" beats="4" scaleX="3" scaleY="3.5" />
+      <move select="Lead Right" beats="4" scaleX="3" scaleY="2" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Swing Right" scaleX=".5" scaleY=".5" />
+      <move select="Swing Left" scaleX=".5" scaleY=".5" />
+      <move select="Hinge Right" scaleX=".5" scaleY=".5" />
+      <move select="Swing Right" scaleX=".5" scaleY=".75" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Swing Right" scaleX=".5" scaleY=".5" />
+      <move select="Stand" beats="3" />
+      <move select="Hinge Right" scaleX=".5" scaleY=".5" />
+      <move select="Swing Right" scaleX=".5" scaleY=".75" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Lead Left" beats="4" scaleX="2" scaleY="2.5" />
+      <move select="Lead Left" beats="4" scaleX="3" />
+    </path>
+  </tam>
+
+  <tam title="Spin the Windmill" from="Tidal Wave (Forward)"
+    formation="Tidal Wave RH BGGB" parts="">
+    <path>
+      <move select="Lead Right" beats="5" scaleX="3.5" scaleY="4" />
+      <move select="Lead Right" beats="5" scaleX="4" scaleY="3.5" />
+    </path>
+    <path>
+      <move select="Lead Left" beats="5" scaleX="2.5" scaleY="3" />
+      <move select="Lead Left" beats="5" scaleX="2.5" scaleY="2.5" />
+    </path>
+    <path>
+      <move select="Swing Right" scaleX=".5" scaleY=".5" />
+      <move select="Swing Left" scaleX=".5" scaleY=".5" />
+      <move select="Swing Right" scaleX=".5" scaleY=".5" />
+      <move select="Hinge Right" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Swing Right" scaleX=".5" scaleY=".5" />
+      <move select="Stand" beats="3" />
+      <move select="Swing Right" scaleX=".5" scaleY=".5" />
+      <move select="Hinge Right" scaleY=".5" />
+    </path>
+  </tam>
+</tamination>

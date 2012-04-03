@@ -1,0 +1,505 @@
+{
+  "-- Two Couple Formations --": "",
+  "Facing Couples":
+    "Formation boy -2 1 0  girl -2 -1 0",
+
+
+  "Couples Facing Out":
+    "Formation girl -2 1 180 boy -2 -1 180",
+
+
+  "Two-Faced Line RH":
+    "Formation boy 0 3 0 girl 0 1 0",
+
+
+  "Two-Faced Line LH":
+    "Formation boy 0 -1 0 girl 0 -3 0",
+
+
+  "Box RH":
+    "Formation boy -2 1 0 girl -2 -1 180",
+
+
+  "Box LH":
+    "Formation boy -2 1 180 girl -2 -1 0",
+
+
+  "Wave RH":
+    "Formation boy 0 3 0 girl 0 1 180",
+
+
+  "Wave LH":
+    "Formation boy 0 -3 0 girl 0 -1 180",
+
+
+  "Wave RH GBBG":
+    "Formation girl 0 3 0 boy 0 1 180",
+
+
+  "Wave LH GBBG":
+    "Formation girl 0 -3 0 boy 0 -1 180",
+
+
+  "Diamond RH":
+    "Formation boy 0 3 0 girl 1 0 270",
+
+
+  "Diamond LH":
+    "Formation boy 0 3 180 girl 1 0 90",
+
+
+  "Diamond Facing":
+    "Formation boy 0 3 0 girl 1 0 90",
+
+
+  "Diamond Facing RH":
+    "Formation boy 0 3 180 girl 1 0 270",
+
+
+  "Single Double Pass Thru":
+    "Formation boy -3 0 0 girl -1 0 0",
+
+
+  "Single Eight Chain Thru":
+    "Formation boy -3 0 0 girl -1 0 180",
+
+  "Single Quarter Tag":
+    "Formation boy -3 0 0 girl 0 1 0",
+
+  "Single Left Quarter Tag":
+    "Formation boy -3 0 0 girl 0 1 180",
+
+  "Tandem Girls Lead":
+    "Formation boy -3 0 0 girl -1 0 0",
+
+  " -- Four Couple Formations -- ":"",
+  "Static Square":
+    "Formation boy -3 1 0  girl -3 -1 0  boy 1 3 270  girl -1 3 270",
+
+  "Static Heads Facing Out":
+    "Formation boy -3 -1 180  girl -3 1 180  boy 1 3 270  girl -1 3 270",
+
+
+  "Static Facing Out":
+    "Formation boy -3 -1 180  girl -3 1 180  boy -1 3 90  girl 1 3 90",
+
+
+  "Static MiniWaves RH":
+    "Formation boy -3 1 0  girl -3 -1 180  boy 1 3 270  girl -1 3 90",
+
+
+  "Static BackToBack":
+    "Formation boy -2 0 0 girl -4 0 180 boy 0 2 270 girl 0 4 90",
+
+
+  "Static Facing":
+    "Formation boy -4 0 0 girl -2 0 180 boy 0 4 270 girl 0 2 90",
+
+  "Single File Promenade":
+    "Formation boy -3 1 270  girl -3 -1 270  boy 1 3 180  girl -1 3 180",
+
+  "Single File Reverse Promenade":
+    "Formation boy -3 1 90  girl -3 -1 90  boy 1 3 0  girl -1 3 0",
+
+  "Promenade":
+    "Formation boy 1.414 1.414 135  girl 2.121 2.121 135  boy 1.414 -1.414 45  girl 2.121 -2.121 45",
+
+  "Promenade 2":
+    "Formation boy 2 0 90 girl 3 0 90 boy 0 2 180 girl 0 3 180",
+
+  "Star Promenade":
+    "Formation boy 1 0 90 girl 3 0 90 boy 0 1 180 girl 0 3 180",
+
+
+  "Normal Lines":
+    "Formation boy -2 3 0  girl -2 1 0  boy -2 -1 0  girl -2 -3 0",
+
+
+  "Lines Facing Out":
+    "Formation girl -2 3 180 boy -2 1 180 girl -2 -1 180 boy -2 -3 180",
+
+
+
+  "Column RH GBGB":
+    "Formation girl -3 -1 180  boy -1 -1 180  girl 1 -1 180  boy 3 -1 180",
+
+
+  "Column LH GBGB":
+    "Formation boy -3 -1 0  girl -1 -1 0  boy 1 -1 0  girl 3 -1 0",
+
+
+  "Z RH GBBG":
+    "Formation girl -4 1 0 boy -2.5 1 0 boy -2.5 -1 180 girl -1 -1 180",
+
+
+  "Magic Column RH":
+    "Formation girl -3 -1 0  boy -1 -1 180  girl 1 -1 180  boy 3 -1 0",
+
+
+  "Magic Column LH":
+    "Formation girl -3 -1 180  boy -1 -1 0  girl 1 -1 0  boy 3 -1 180",
+
+
+
+  "Ocean Waves RH BGGB":
+    "Formation boy -2 3 0  girl -2 1 180  girl -2 -1 0  boy -2 -3 180",
+
+
+  "Ocean Waves LH BGGB":
+    "Formation boy -2 3 180  girl -2 1 0  girl -2 -1 180  boy -2 -3 0",
+
+
+  "Ocean Waves RH GBBG":
+    "Formation girl -2 3 0  boy -2 1 180  boy -2 -1 0  girl -2 -3 180",
+
+
+  "Ocean Waves LH GBBG":
+    "Formation girl -2 3 180  boy -2 1 0  boy -2 -1 180  girl -2 -3 0",
+
+
+  "Ocean Waves RH BGBG":
+    "Formation boy -2 3 0 girl -2 1 180 boy -2 -1 0 girl -2 -3 180",
+
+
+  "Ocean Waves LH BGBG":
+    "Formation boy -2 3 180 girl -2 1 0 boy -2 -1 180 girl -2 -3 0",
+
+
+
+  "Circle":
+    "Formation boy -2.414 1 -22.5  girl -2.414 -1 22.5  boy 1 2.414 247.5 girl -1 2.414 292.5",
+
+
+  "Alamo Wave":
+    "Formation boy -2.414 1 -22.5  girl -2.414 -1 202.5  boy 1 2.414 247.5 girl -1 2.414 112.5",
+
+
+
+  "Two-Faced Lines RH":
+    "Formation boy -2 3 0 girl -2 1 0 girl -2 -1 180 boy -2 -3 180",
+
+
+  "Two-Faced Lines LH":
+    "Formation girl -2 3 180 boy -2 1 180 boy -2 -1 0 girl -2 -3 0",
+
+
+  "Thar LH Boys":
+    "Formation boy -1 0 270 girl -3 0 90 boy 0 -1 0 girl 0 -3 180",
+
+
+  "Thar LH Girls":
+    "Formation girl -1 0 270 boy -3 0 90 girl 0 -1 0 boy 0 -3 180",
+
+
+  "Thar RH Boys":
+    "Formation boy -1 0 90 girl -3 0 270 boy 0 -1 180 girl 0 -3 0",
+
+
+
+  "Diamonds RH Girl Points":
+    "Formation boy 0 -3 180 girl -3 -2 90 boy 0 -1 0 girl 3 -2 270",
+
+
+  "Diamonds LH Girl Points":
+    "Formation boy 0 -3 0 girl -3 -2 270 boy 0 -1 180 girl 3 -2 90",
+
+
+  "Diamonds Facing Girl Points":
+    "Formation boy 0 -3 180 girl -3 -2 270 boy 0 -1 0 girl 3 -2 90",
+
+
+  "Diamonds Facing LH Girl Points":
+    "Formation boy 0 -3 0 girl -3 -2 90 boy 0 -1 180 girl 3 -2 270",
+
+
+  "Diamonds RH PTP Girl Points":
+    "Formation boy -1 -3 90 girl 0 -1 0 boy 1 -3 270 girl 0 -5 180",
+
+
+  "Diamonds 3 and 1 Girl Points":
+    "Formation boy 0 -3 180 girl -3 -2 270 boy 0 -1 0 girl 3 -2 270",
+
+
+  "Diamonds 3 and 1":
+    "Formation boy 0 -3 180 girl -3 -2 270 boy 0 -1 180 girl 3 -2 90",
+
+
+  "Interlocked Diamonds RH Girl Points":
+    "Formation boy 0 -3 180 girl -3 -2 90 boy 0 -1 180 girl 3 -2 270",
+
+
+  "Interlocked Diamonds LH Girl Points":
+    "Formation boy 0 -3 0 girl -3 -2 270 boy 0 -1 0 girl 3 -2 90",
+
+
+  "Interlocked Diamonds RH PTP Girl Points":
+    "Formation boy -1 -3 90 girl 0 -1 180 boy 1 -3 270 girl 0 -5 180",
+
+
+  "Interlocked Diamonds LH PTP Girl Points":
+    "Formation boy -1 -3 270 girl 0 -1 0 boy 1 -3 90 girl 0 -5 0",
+
+
+
+  "Inverted Lines Centers In":
+    "Formation boy -2 3 180  girl -2 1 0  boy -2 -1 0  girl -2 -3 180",
+
+
+  "Inverted Lines Centers Out":
+    "Formation boy -2 3 0  girl -2 1 180  boy -2 -1 180  girl -2 -3 0",
+
+
+  "Concentric Diamonds RH":
+    "Formation boy 0 3 0  girl 0 1 0  boy 2 0 270  girl 4 0 270",
+
+
+  "Concentric Diamonds Mixed":
+    "Formation boy 0 3 0  girl 0 1 180  boy 2 0 90  girl 4 0 270",
+
+
+  "Quarter Tag":
+    "Formation boy -3 1 0 girl -3 -1 0 boy 0 -3 180 girl 0 -1 0",
+
+
+  "Quarter Tag LH":
+    "Formation boy -3 1 0 girl -3 -1 0 boy 0 -3 0 girl 0 -1 180",
+
+
+  "3/4 Tag":
+    "Formation girl -3 1 180 boy -3 -1 180 boy 0 -3 180 girl 0 -1 0",
+
+
+  "3/4 Tag LH":
+    "Formation girl -3 1 180 boy -3 -1 180 boy 0 -3 0 girl 0 -1 180",
+
+
+  "Quarter Lines RH":
+    "Formation boy -3 1 0 girl -3 -1 0 boy 0 1 0 girl 0 3 0",
+
+
+  "Quarter Lines LH":
+    "Formation boy -3 1 0 girl -3 -1 0 boy 0 -1 0 girl 0 -3 0",
+
+
+  "Quarter Wave RH":
+    "Formation boy -3 1 0 girl -3 -1 180 boy 0 -3 180 girl 0 -1 0",
+
+
+  "Quarter Wave LH":
+    "Formation boy -3 1 180 girl -3 -1 0 boy 0 -3 0 girl 0 -1 180",
+
+
+
+  "Double Pass Thru":
+    "Formation boy -3 1 0 girl -3 -1 0 boy -1 1 0 girl -1 -1 0",
+
+
+  "Completed Double Pass Thru":
+    "Formation girl -3 1 180 boy -3 -1 180 girl -1 1 180 boy -1 -1 180",
+
+
+  "Eight Chain Thru":
+    "Formation boy -3 1 0 girl -3 -1 0 boy -1 -1 180 girl -1 1 180",
+
+
+  "Pass Thru":
+    "Formation boy -3 1 0 girl -3 -1 0 boy -1 -1 180 girl -1 1 180",
+
+
+  "Trade By":
+    "Formation girl -3 1 180 boy -3 -1 180 girl -1 -1 0 boy -1 1 0",
+
+
+
+  "Two-Faced Tidal Line RH":
+    "Formation boy 0 3.5 0 girl 0 2.5 0 girl 0 1.5 180 boy 0 .5 180",
+
+
+  "Two-Faced Tidal Line LH":
+    "Formation girl 0 3.5 180 boy 0 2.5 180 boy 0 1.5 0 girl 0 .5 0",
+
+
+  "Tidal Inverted Line RH":
+    "Formation boy 0 -3.5 180 girl 0 -2.5 0 boy 0 -1.5 0 girl 0 -.5 180",
+
+  "Tidal Line RH":
+    "Formation boy 0 -3.5 180 girl 0 -2.5 180 boy 0 -1.5 180 girl 0 -.5 180",
+
+
+  "Tidal Line LH":
+    "Formation boy 0 -2.5 0 girl 0 -3.5 0 boy 0 -.5 0 girl 0 -1.5 0",
+
+
+  "Tidal Wave RH BGGB":
+    "Formation boy 0 -3.5 180 girl 0 -2.5 0 girl 0 -1.5 180 boy 0 -.5 0",
+
+
+  "Tidal Wave LH BGGB":
+    "Formation boy 0 -3.5 0 girl 0 -2.5 180 girl 0 -1.5 0 boy 0 -.5 180",
+
+
+
+  "Hourglass RH BP":
+    "Formation boy -2 -3 180 girl -3 0 90 boy -2 3 0 girl 0 1 0",
+
+  "Hourglass LH BP":
+    "Formation boy -2 -3 0 girl -3 0 270 boy -2 3 180 girl 0 1 180",
+
+  "Hourglass Facing LH Box":
+    "Formation boy -2 -3 0 girl -3 0 90 boy -2 3 180 girl 0 1 0",
+
+  "Hourglass Facing RH Box":
+    "Formation boy -2 -3 180 girl -3 0 270 boy -2 3 0 girl 0 1 180",
+
+  " -- Galaxy points are tweaked to fix handholds -- ":"",
+  "Galaxy RH GP":
+    "Formation boy -1 -1 180 girl -3 0 90 boy -1 1 0 girl 0 3.1 0",
+
+
+  "Galaxy LH GP":
+    "Formation boy -1 -1 0 girl -3 0 270 boy -1 1 180 girl 0 3.1 180",
+
+
+
+  "Facing Blocks":
+    "Formation boy -3 1 0 girl -3 -3 0 boy -1 3 0 girl -1 -1 0",
+
+
+  "Blocks Facing Out":
+    "Formation girl -3 1 180 boy -3 -3 180 girl -1 3 180 boy -1 -1 180",
+
+
+  "Blocks RH":
+    "Formation boy -3 1 0 girl -3 -3 180 boy -1 3 0 girl -1 -1 180",
+
+
+
+  "Butterfly RH":
+    "Formation boy -3 3 0 girl -3 -3 180 boy -1 1 0 girl -1 -1 180",
+
+
+  "Butterfly LH":
+    "Formation boy -3 3 180 girl -3 -3 0 boy -1 1 180 girl -1 -1 0",
+
+
+  "Butterfly In":
+    "Formation boy -3 3 0 girl -3 -3 0 boy -1 1 0 girl -1 -1 0",
+
+
+  "Butterfly Out":
+    "Formation boy -3 -3 180 girl -3 3 180 boy -1 -1 180 girl -1 1 180",
+
+
+  "Butterfly Chain Thru":
+    "Formation boy -3 3 0 girl -3 -3 0 boy -1 -1 180 girl -1 1 180",
+
+
+  "Butterfly Trade By":
+    "Formation boy -3 -3 180 girl -3 3 180 boy -1 1 0 girl -1 -1 0",
+
+
+  "O RH":
+    "Formation boy -3 1 0 girl -3 -1 180 boy -1 3 0 girl -1 -3 180",
+
+
+  "O LH":
+    "Formation boy -3 1 180 girl -3 -1 0 boy -1 3 180 girl -1 -3 0",
+
+
+  "O In":
+    "Formation boy -3 1 0 girl -3 -1 0 boy -1 3 0 girl -1 -3 0",
+
+
+  "O Out":
+    "Formation girl -3 1 180 boy -3 -1 180 girl -1 3 180 boy -1 -3 180",
+
+
+  "O Eight Chain Thru":
+    "Formation boy -3 1 0 girl -3 -1 0 boy -1 -3 180 girl -1 3 180",
+
+
+  "O Trade By":
+    "Formation boy -3 -1 180 girl -3 1 180 boy -1 3 0 girl -1 -3 0",
+
+
+   "These are T-Bones, boys as trailers in a column and the girls facing out":
+   "DLDL is 'down,left,down,left' reading the bottom line from left to right",
+  "T-Bone DLDL":
+    "Formation girl -3 -1 270  boy -1 -1 180  girl 1 -1 270  boy 3 -1 180",
+
+  "T-Bone RDRD":
+    "Formation girl -3 1 90  boy -1 1 180  girl 1 1 90  boy 3 1 180",
+
+  "T-Bone URRD":
+    "Formation boy -1 3 0 girl -1 1 270 girl -1 -1 270 boy -1 -3 180",
+
+  "T-Bone ULLD":
+    "Formation boy -1 3 0 girl -1 1 90 girl -1 -1 90 boy -1 -3 180",
+
+  "T-Bone ULRU":
+    "Formation boy -1 3 0 girl -1 -1 270 boy -1 1 90 girl -1 -3 0",
+
+  "T-Bone URLU":
+    "Formation boy -1 3 0 girl -1 -1 90 boy -1 1 270 girl -1 -3 0",
+
+  "T-Bone DLLU":
+    "Formation boy -1 3 180 girl -1 1 90 girl -1 -1 90 boy -1 -3 0",
+
+  "T-Bone DRLD":
+    "Formation boy -1 3 180 girl -1 -1 90 boy -1 1 270 girl -1 -3 180",
+
+  "T-Bone DLRD":
+    "Formation boy -1 3 180 girl -1 -1 270 boy -1 1 90 girl -1 -3 180",
+
+  "T-Bone LUUR":
+    "Formation boy -1 3 90 girl 1 3 90 boy -1 1 0 girl -1 -1 0",
+
+  "T-Bone LDDR":
+    "Formation boy -1 3 90 girl 1 3 90 boy -1 1 180 girl -1 -1 180",
+
+  "T-Bone LULU":
+    "Formation boy -1 3 90 girl -1 1 0 boy -1 -1 90 girl -1 -3 0",
+
+
+
+
+  "T-Bone Couples":
+    "Formation boy -2 3 0 girl -2 1 0 girl -3 -2 270 boy -1 -2 270",
+
+  " -- Formations with phantoms --":"",
+  "Phantom Formation In":
+    "Formation boy -2 3 0 girl -2 1 0 boy 3 2 270 girl 1 2 270 phantom -2 -1 0 phantom -2 -3 0",
+
+
+  "Phantom Formation RH":
+    "Formation boy -2 3 0 girl -2 1 180 boy 3 2 270 girl 1 2 90 phantom -2 -1 0 phantom -2 -3 180",
+
+
+  "Phantom Formation Two-Faced":
+    "Formation boy -2 3 0 girl -2 1 0 boy 1 2 90 girl 3 2 90 phantom -2 -1 180 phantom -2 -3 180",
+
+
+  "Phantom Lines In":
+    "Formation boy 2 3 180 girl 2 1 180 boy 2 -1 180 girl 2 -3 180 phantom 2 5 180 phantom 2 -5 180",
+
+
+  "Phantom Lines Out":
+    "Formation girl -2 3 180 boy -2 1 180 girl -2 -1 180 boy -2 -3 180 phantom -2 -5 180 phantom -2 5 180",
+
+
+  "Phantom Waves RH":
+    "Formation boy 2 3 180  girl 2 1 0 boy 2 -1 180 girl 2 -3 0 phantom 2 5 0 phantom 2 -5 180",
+
+
+  "Phantom Waves LH":
+    "Formation boy -2 1 0  girl -2 3 180 boy -1 -2 90 girl -3 -2 270",
+
+
+  "Phantom Two-Faced RH":
+    "Formation boy -2 3 0 girl -2 1 0 girl -3 -2 270 boy -1 -2 270",
+
+
+  "Tidal Line Girls Disconnected":
+    "Formation girl 0 -2.5 0 boy 0 -3.5 0 girl 0 -.5 0 boy 0 -1.5 0"
+
+}

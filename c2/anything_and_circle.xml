@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE tamination SYSTEM "../tamination.dtd">
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinatiorns.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+
+  <tam title="Switch and Circle 1/4" from="Quarter Tag" formation="Quarter Tag" parts="3">
+  <path numbers="1 8">
+    <move select="Stand" beats="3" hands="right"/>
+    <move select="Extend Left" beats="4" scaleX="3" scaleY="2"/>
+  </path>
+  <path numbers="2 7">
+    <move select="Stand" beats="3" hands="left"/>
+    <move select="Dodge Left" beats="4"/>
+  </path>
+  <path numbers="6 3">
+    <move select="Run Right" scaleY="2"/>
+  </path>
+  <path numbers="5 4">
+    <move select="Run Right"/>
+    <move select="Run Right" beats="4" offsetX="3"/>
+  </path>
+  </tam>
+
+  <tam title="Swing and Mix and Circle 1/2"
+       from="Quarter Tag" formation="Quarter Tag" parts="8;4;8">
+  <path numbers="1 8">
+    <!-- Swing and Mix -->
+    <move select="Stand" beats="8" hands="right"/>
+    <!-- Circle -->
+    <move select="Dodge Right" beats="4"/>
+    <!-- Swing and Mix -->
+    <move select="Stand" beats="8" hands="right"/>
+    <!-- Circle -->
+    <move select="Dodge Left" beats="4"/>
+  </path>
+  <path numbers="2 7">
+    <!-- Swing and Mix -->
+    <move select="Stand" beats="8" hands="left"/>
+    <!-- Circle -->
+    <move select="Extend Right" beats="4" scaleX="3" scaleY="2"/>
+    <!-- Swing and Mix -->
+    <move select="Swing Left"/>
+    <move select="Run Right" beats="5" scaleX="1.5" scaleY="2"/>
+    <!-- Circle -->
+      <move select="Run Right" beats="4" offsetX="3"/>
+  </path>
+  <path numbers="6 3">
+    <!-- Swing and Mix -->
+    <move select="Swing Right"/>
+    <move select="Run Left" beats="5" scaleX="1.5" scaleY="2"/>
+    <!-- Circle -->
+      <move select="Run Left" beats="4" offsetX="3"/>
+    <!-- Swing and Mix -->
+    <move select="Stand" beats="8" hands="right"/>
+    <!-- Circle -->
+    <move select="Extend Left" beats="4" scaleX="3" scaleY="2"/>
+  </path>
+  <path numbers="5 4">
+    <!-- Swing and Mix -->
+    <move select="Swing Right"/>
+    <move select="Dodge Right" beats="2"/>
+    <move select="Swing Right"/>
+    <!-- Circle -->
+    <move select="Stand" beats="4" hands="right"/>
+    <!-- Swing and Mix -->
+    <move select="Swing Left"/>
+    <move select="Dodge Left" beats="2"/>
+    <move select="Swing Left"/>
+    <!-- Circle -->
+    <move select="Stand" beats="4" hands="left"/>
+  </path>
+  </tam>
+
+</tamination>

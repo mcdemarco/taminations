@@ -1,0 +1,77 @@
+  <calllist title="Calls taught in the current 7:00 class">
+
+    <calldate date="4/4/2007">
+      <call name="Extend" href="ms/extend"/>
+      <call name="Pass the Ocean" href="ms/pass_the_ocean"/>
+      <call name="Flutterwheel" href="ms/flutterwheel"/>
+      <call name="Reverse Flutterwheel" href="ms/flutterwheel"/>
+      <call name="Sweep a Quarter" href="ms/sweep_a_quarter"/>
+    </calldate>
+
+    <calldate date="3/28/2007">
+      <call name="Shoot the Star" href="ms/shoot_the_star"/>
+      <call name="Wheel and Deal (from Two-Faced Lines)" href="ms/wheel_and_deal"/>
+    </calldate>
+
+    <calldate date="3/21/2007">
+      <call name="Boys/Girls Run" href="ms/run"/>
+    </calldate>
+
+    <calldate date="3/7/2007">
+      <call name="Alamo Ring" href="ms/alamo"/>
+      <call name="All Eight Circulate" href="ms/circulate"/>
+      <call name="Ocean Wave" href="ms/ocean_wave"/>
+      <call name="Swing Thru" href="ms/swing_thru"/>
+    </calldate>
+
+    <calldate date="2/28/2007">
+      <call name="Allemande Thar" href="ms/thar"/>
+      <call name="Box the Gnat" href="ms/box_the_gnat"/>
+      <call name="Slip the Clutch" href="ms/slip_the_clutch"/>
+      <call name="Trade (Partner, Couples, Boys, Girls)" href="ms/trade"/>
+      <call name="Wrong Way Grand" href="ms/right_and_left_grand"/>
+    </calldate>
+
+    <calldate date="2/21/2007">
+      <call name="Square Thru" href="ms/square_thru"/>
+      <call name="Wheel Around" href="ms/wheel_around"/>
+    </calldate>
+
+    <calldate date="2/7/2007">
+      <call name="California Twirl" href="ms/california_twirl"/>
+      <call name="Star Promenade" href="ms/star_promenade"/>
+      <call name="Split the Outside Couple" href="ms/split_the_outside_couple"/>
+      <call name="All Around the Corner" href="ms/all_around_the_corner"/>
+      <call name="See Saw" href="ms/see_saw"/>
+      <call name="Dive Thru" href="ms/dive_thru"/>
+    </calldate>
+
+    <calldate date="1/31/2007">
+      <call name="Allemande Left" href="ms/allemande_left" />
+      <call href="ms/turn_back" name="Backtrack" ></call>
+      <call href="ms/bend_the_line" name="Bend the Line" />
+      <call name="Circle Left and Circle Right" href="ms/circle" />
+      <call href="ms/circulate" name="Circulate" />
+      <call name="Courtesy Turn" href="ms/courtesy_turn" />
+      <call name="Dosado" href="ms/dosado" />
+      <call href="ms/forward_and_back" name="Forward and Back"/>
+      <call href="ms/ladies_chain" name="Four Ladies Chain"/>
+      <call href="ms/grand_square" name="Grand Square" />
+      <call href="ms/sashay" name="Ladies In, Men Sashay" />
+      <call href="ms/lead_right" name="Lead Right" />
+      <call href="ms/star" name="Left-Hand Star"/>
+      <call href="ms/pass_thru" name="Pass Thru" ></call>
+      <call href="ms/promenade" name="Promenade" />
+      <call href="ms/right_and_left_grand" name="Right and Left Grand"/>
+      <call name="Right and Left Thru" href="ms/right_and_left_thru" />
+      <call href="ms/sashay" name="Rollaway" />
+      <call href="ms/separate" name="Separate, Around 2"/>
+      <call href="ms/star_thru" name="Star Thru"/>
+      <call href="ms/swing" name="Swing" />
+      <call href="ms/ladies_chain" name="Two Ladies Chain" />
+      <call href="ms/turn_back" name="U-Turn Back"/>
+      <call href="ms/veer" name="Veer Left" />
+      <call href="ms/right_and_left_grand" name="Weave the Ring"/>
+    </calldate>
+
+  </calllist>

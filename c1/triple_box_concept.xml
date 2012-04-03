@@ -1,0 +1,340 @@
+<?xml version="1.0"?>
+<!DOCTYPE tamination SYSTEM "../tamination.dtd">
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+
+  <comment>
+    <p>Triple Box versions of Challenge calls are listed with each call.</p>
+  </comment>
+
+  <tam title="Triple Box Circulate" group="Triple Box"
+       from=""
+       formation="Phantom Waves RH">
+  <path>
+    <move select="Forward 4" />
+  </path>
+  <path>
+    <move select="Run Right" beats="4" />
+  </path>
+  <path>
+    <move select="Forward 4" />
+  </path>
+  <path>
+    <move select="Run Right" beats="4"/>
+  </path>
+  <path>
+    <move select="Run Right" beats="4"/>
+    </path>
+    <path>
+      <move select="Forward 4" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Dixie Style to a Wave" group="Triple Box"
+       from="" formation="Phantom Lines In">
+    <path>
+      <move select="Quarter Right" beats="3" offsetY="-1" />
+      <move select="Swing Left" scaleX=".5" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" hands="right" offsetX="1" offsetY=".5" />
+      <move select="Lead Right" beats="1" scaleY=".5" />
+      <move select="Swing Left" />
+    </path>
+    <path>
+      <move select="Quarter Right" beats="3" offsetY="-1" />
+      <move select="Swing Left" scaleX=".5" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" hands="right" offsetX="1" offsetY=".5" />
+      <move select="Lead Right" beats="1" scaleY=".5" />
+      <move select="Swing Left" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" hands="right" offsetX="1" offsetY=".5" />
+      <move select="Lead Right" beats="1" scaleY=".5" />
+      <move select="Swing Left" />
+    </path>
+    <path>
+      <move select="Quarter Right" beats="3" offsetY="-1" />
+      <move select="Swing Left" scaleX=".5" scaleY=".5" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Flutterwheel" group="Triple Box" from="" formation="Phantom Lines In">
+    <path>
+      <move select="Forward" hands="nohands" beats="3.5" />
+      <move select="Extend Left" hands="right" beats="1.5" scaleX="1.5" scaleY="1.5" />
+      <move select="Run Right" hands="right" scaleX="1.5" scaleY="2" offsetX="1.5" offsetY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="1.5" scaleY="1.75" />
+      <move select="Swing Right" hands="both" scaleX=".75" scaleY=".75" />
+      <move select="U-Turn Right" hands="left" offsetX="1.5" offsetY=".25" />
+    </path>
+    <path>
+      <move select="Forward" hands="nohands" beats="3.5" />
+      <move select="Extend Left" hands="right" beats="1.5" scaleX="1.5" scaleY="1.5" />
+      <move select="Run Right" hands="right" scaleX="1.5" scaleY="2" offsetX="1.5" offsetY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="1.5" scaleY="1.75" />
+      <move select="Swing Right" hands="both" scaleX=".75" scaleY=".75" />
+      <move select="U-Turn Right" hands="left" offsetX="1.5" offsetY=".25" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="1.5" scaleY="1.75" />
+      <move select="Swing Right" hands="both" scaleX=".75" scaleY=".75" />
+      <move select="U-Turn Right" hands="left" offsetX="1.5" offsetY=".25" />
+    </path>
+    <path>
+      <move select="Forward" hands="nohands" beats="3.5" />
+      <move select="Extend Left" hands="right" beats="1.5" scaleX="1.5" scaleY="1.5" />
+      <move select="Run Right" hands="right" scaleX="1.5" scaleY="2" offsetX="1.5" offsetY=".5" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Follow Your Neighbor and Spread" group="Triple Box"
+       from="" formation="Phantom Waves RH">
+    <path>
+      <move select="Forward 2" beats="1.5" offsetY="-.125" />
+      <move select="Swing Right" scaleX=".75" scaleY=".75" />
+      <move select="Hinge Right" beats="2" offsetX="2" offsetY=".25" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="3" />
+      <move select="Run Right" beats="3" />
+    </path>
+    <path>
+      <move select="Forward 2" beats="1.5" offsetY="-.125" />
+      <move select="Swing Right" scaleX=".75" scaleY=".75" />
+      <move select="Hinge Right" beats="2" offsetX="2" offsetY=".25" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="3" />
+      <move select="Run Right" beats="3" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="3" />
+      <move select="Run Right" beats="3" />
+    </path>
+    <path>
+      <move select="Forward 2" beats="1.5" offsetY="-.125" />
+      <move select="Swing Right" scaleX=".75" scaleY=".75" />
+      <move select="Hinge Right" beats="2" offsetX="2" offsetY=".25" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Pass the Ocean" group="Triple Box" from="" formation="Phantom Lines In">
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Forward" beats=".5" />
+      <move select="Lead Right" scaleX="2" scaleY="1.5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Lead Left" hands="left" beats="2" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Forward" beats=".5" />
+      <move select="Lead Right" scaleX="2" scaleY="1.5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Lead Left" hands="left" beats="2" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Lead Left" hands="left" beats="2" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Forward" beats=".5" />
+      <move select="Lead Right" scaleX="2" scaleY="1.5" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Quarter In" group="Triple Box"
+       from="" formation="Phantom Lines In">
+    <path><move select="Quarter Right" offsetX="1"/></path>
+    <path><move select="Quarter Left" offsetX="1"/></path>
+    <path><move select="Quarter Right" offsetX="1"/></path>
+    <path><move select="Quarter Left" offsetX="1"/></path>
+    <path><move select="Quarter Left" offsetX="1"/></path>
+    <path><move select="Quarter Right" offsetX="1"/></path>
+  </tam>
+
+  <tam title="Triple Box Right and Left Thru" group="Triple Box"
+       from="" formation="Phantom Lines In">
+    <path>
+      <move select="Pull Left" scaleX="2" scaleY=".5" />
+      <move select="Extend Right" scaleX="2" scaleY=".5" />
+      <move select="Beau Wheel" scaleX=".67" />
+    </path>
+    <path>
+      <move select="Pull Left" scaleX="2" scaleY=".5" />
+      <move select="Extend Right" scaleX="2" scaleY=".5" />
+      <move select="Belle Wheel" scaleX=".67" />
+    </path>
+    <path>
+      <move select="Pull Left" scaleX="2" scaleY=".5" />
+      <move select="Extend Right" scaleX="2" scaleY=".5" />
+      <move select="Beau Wheel" scaleX=".67" />
+    </path>
+    <path>
+      <move select="Pull Left" scaleX="2" scaleY=".5" />
+      <move select="Extend Right" scaleX="2" scaleY=".5" />
+      <move select="Belle Wheel" scaleX=".67" />
+    </path>
+    <path>
+      <move select="Pull Left" scaleX="2" scaleY=".5" />
+      <move select="Extend Right" scaleX="2" scaleY=".5" />
+      <move select="Belle Wheel" scaleX=".67" />
+    </path>
+    <path>
+      <move select="Pull Left" scaleX="2" scaleY=".5" />
+      <move select="Extend Right" scaleX="2" scaleY=".5" />
+      <move select="Beau Wheel" scaleX=".67" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Boys Run" group="Triple Box"
+       from="" formation="Phantom Waves RH">
+    <path>
+      <move select="Run Right"/>
+    </path>
+    <path>
+      <move select="Dodge Right"/>
+    </path>
+    <path>
+      <move select="Run Right"/>
+    </path>
+    <path>
+      <move select="Dodge Right"/>
+    </path>
+    <path>
+      <move select="Dodge Right"/>
+    </path>
+    <path>
+      <move select="Run Right"/>
+    </path>
+  </tam>
+
+  <tam title="Triple Box Scoot Back" group="Triple Box"
+       from="" formation="Phantom Waves RH">
+    <path>
+      <move select="Extend Right" scaleX="2" scaleY=".25" />
+      <move select="Swing Right" scaleX=".75" scaleY=".75" />
+      <move select="Extend Left" scaleX="2" scaleY=".25" />
+    </path>
+    <path>
+      <move select="Flip Right" beats="6" />
+    </path>
+    <path>
+      <move select="Extend Right" scaleX="2" scaleY=".25" />
+      <move select="Swing Right" scaleX=".75" scaleY=".75" />
+      <move select="Extend Left" scaleX="2" scaleY=".25" />
+    </path>
+    <path>
+      <move select="Flip Right" beats="6" />
+    </path>
+    <path>
+      <move select="Flip Right" beats="6" />
+    </path>
+    <path>
+      <move select="Extend Right" scaleX="2" scaleY=".25" />
+      <move select="Swing Right" scaleX=".75" scaleY=".75" />
+      <move select="Extend Left" scaleX="2" scaleY=".25" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Square Thru" group="Triple Box" from="" formation="Phantom Lines In">
+    <path>
+      <move select="Forward" />
+      <move select="Pull Left" scaleY=".5" />
+      <move select="Lead Right" scaleX=".5" scaleY="1.5" />
+      <move select="Lead Right" offsetX=".5" offsetY=".5" />
+      <move select="Lead Right" scaleX=".5" scaleY="1.5" />
+      <move select="Extend Left" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Forward" />
+      <move select="Pull Left" scaleY=".5" />
+      <move select="Lead Left" offsetX=".5" offsetY="-.5" />
+      <move select="Lead Left" scaleX=".5" scaleY="1.5" />
+      <move select="Lead Left" offsetX=".5" offsetY="-.5" />
+      <move select="Extend Left" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Forward" />
+      <move select="Pull Left" scaleY=".5" />
+      <move select="Lead Right" scaleX=".5" scaleY="1.5" />
+      <move select="Lead Right" offsetX=".5" offsetY=".5" />
+      <move select="Lead Right" scaleX=".5" scaleY="1.5" />
+      <move select="Extend Left" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Forward" />
+      <move select="Pull Left" scaleY=".5" />
+      <move select="Lead Left" offsetX=".5" offsetY="-.5" />
+      <move select="Lead Left" scaleX=".5" scaleY="1.5" />
+      <move select="Lead Left" offsetX=".5" offsetY="-.5" />
+      <move select="Extend Left" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Forward" />
+      <move select="Pull Left" scaleY=".5" />
+      <move select="Lead Left" offsetX=".5" offsetY="-.5" />
+      <move select="Lead Left" scaleX=".5" scaleY="1.5" />
+      <move select="Lead Left" offsetX=".5" offsetY="-.5" />
+      <move select="Extend Left" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Forward" />
+      <move select="Pull Left" scaleY=".5" />
+      <move select="Lead Right" scaleX=".5" scaleY="1.5" />
+      <move select="Lead Right" offsetX=".5" offsetY=".5" />
+      <move select="Lead Right" scaleX=".5" scaleY="1.5" />
+      <move select="Extend Left" scaleY=".5" />
+    </path>
+  </tam>
+
+  <tam title="Triple Box Wheel Thru" group="Triple Box"
+       from="" formation="Phantom Lines In">
+    <path>
+      <move select="Lead Right" beats="4" scaleX="3" scaleY="2" />
+    </path>
+    <path>
+      <move select="Quarter Right" beats="3" offsetX="1" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="4" scaleX="3" scaleY="2" />
+    </path>
+    <path>
+      <move select="Quarter Right" beats="3" offsetX="1" />
+    </path>
+    <path><move select="Quarter Right" beats="3" offsetX="1" /></path>
+    <path><move select="Lead Right" beats="4" scaleX="3" scaleY="2" /></path>
+  </tam>
+
+</tamination>

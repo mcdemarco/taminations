@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+  
+  
+  
+
+  <tam title="Slither"
+       from="Right-Hand Waves"
+       formation="Ocean Waves RH BGBG"
+       parts="1.5" >
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Left" scaleX="2" />
+    </path>
+    <path>
+      <move select="BackSashay Left" scaleX="2" />
+    </path>
+    <path>
+    </path>
+  </tam>
+
+  <tam title="Slither"
+       from="Left-Hand Waves"
+       formation="Ocean Waves LH BGGB"
+       parts="1.5" >
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Right" scaleX="2" />
+    </path>
+    <path>
+      <move select="BackSashay Right" scaleX="2" />
+    </path>
+    <path>
+    </path>
+  </tam>
+
+  <tam title="Slither"
+       from="Right-Hand Two-Faced Line"
+       formation="Two-Faced Lines RH"
+       parts="1.5" >
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Right" scaleX="2" />
+    </path>
+    <path>
+      <move select="BackSashay Right" scaleX="2" />
+    </path>
+    <path>
+    </path>
+  </tam>
+
+  <tam title="Slither"
+       from="Left-Hand Two-Faced Line"
+       formation="Two-Faced Lines LH"
+       parts="1.5" >
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Left" scaleX="2" />
+    </path>
+    <path>
+      <move select="BackSashay Left" scaleX="2" />
+    </path>
+    <path>
+    </path>
+  </tam>
+
+  <tam title="Slither"
+       from="Right-Hand Tidal Wave"
+       formation="Tidal Wave RH BGGB"
+       parts="1.5" >
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Left" scaleX="1.5" scaleY=".5" />
+    </path>
+    <path>
+      <move select="BackSashay Left" scaleX="1.5" scaleY=".5" />
+    </path>
+    <path>
+    </path>
+  </tam>
+
+  <tam title="Slither"
+       from="Left-Hand Tidal Wave"
+       formation="Tidal Wave LH BGGB"
+       parts="1.5" >
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Right" scaleX="1.5" scaleY=".5" />
+    </path>
+    <path>
+      <move select="BackSashay Right" scaleX="1.5" scaleY=".5" />
+    </path>
+    <path>
+    </path>
+  </tam>
+
+  <tam title="As Couples Slither"
+       from="Two-Faced Tidal Line"
+       formation="Two-Faced Tidal Line RH"
+       parts="2" >
+    <path>
+    </path>
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Left" beats="4" scaleX="2" />
+    </path>
+    <path>
+      <move select="BackSashay Left" beats="4" scaleX="2" />
+    </path>
+  </tam>
+
+  <tam title="All 8 Slither"
+       from="Thar"
+       formation="Thar LH Boys"
+       parts="1.5" >
+    <path>
+      <move select="BackSashay Left" scaleX="2" />
+    </path>
+    <path>
+    </path>
+    <path>
+      <move select="BackSashay Left" scaleX="2" />
+    </path>
+    <path>
+    </path>
+  </tam>
+</tamination>

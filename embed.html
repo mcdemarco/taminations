@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!--
+    Copyright 2009 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<head>
+
+
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="image/x-icon" href="../favicon.ico" rel="icon" />
+<link href="tamination.css" type="text/css" rel="stylesheet" />
+<link href="noscroll.css" type="text/css" rel="stylesheet" />
+<link href="menus.css" type="text/css" rel="stylesheet" />
+<link href="jqueryui/css/jquery-ui.css" rel="stylesheet" />
+<script src="cookie.js" type="text/javascript"></script>
+<script src="jquery-1.7.1.js" type="text/javascript"></script>
+<script src="jquerysvg/jquery.svg.min.js" type="text/javascript"></script>
+<script src="jqueryui/js/jquery-ui.js" type="text/javascript"></script>
+<script src="jquery.mousewheel.min.js" type="text/javascript"></script>
+<script src="menus.js" type="text/javascript"></script>
+<script src="tamination.js" type="text/javascript"></script>
+<script src="tamsvg.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var w = window.innerWidth;
+    if (!w)
+      w = document.body.scrollWidth;
+    var h = window.innerHeight;
+    if (!h)
+      h = document.body.clientHeight;
+    if (!h)
+      h = w+100;
+    $('#tamdiv').width(w);
+    $('#tamdiv').height(h);
+    var search = document.URL.split(/\?/)[1];
+    args = search.split(/&/);
+    var page = args[0].split(/\./)[0];
+    var call = args[0].split(/\./)[1];
+    var params = {};
+    for (var i=1; i<args.length; i++) {
+      params[args[i]] = 1;
+    }
+    args = params;
+    $.ajax({url:page+".xml",dataType:"xml",success:function(a) {
+      animations = a;
+      var cansvg = !$.browser.msie || $.browser.version > 8;
+      if (cansvg) {
+        TAMination(0,animations,call,'');
+        var svgdim = h-100 < w ? h-100 : w;
+        appletstr='<div id="appletcontainer"><div id="svgdiv" '+
+                  'style="width:'+svgdim+'px; height:'+svgdim+'px;"></div></div>';
+        $("body").prepend(appletstr);
+        $('#svgdiv').svg({onLoad:TamSVG});
+        generateButtonPanel();
+        if (args.play)
+          tamsvg.start();
+      } else
+        TAMination('tamdiv',a,call,params);
+     }});
+  });
+var callnumber = 0;
+var currentcall = 'No Call';
+</script>
+</head>
+<body>
+<div id="tamdiv"></div>
+</body>
+</html>

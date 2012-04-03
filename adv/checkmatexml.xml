@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+  
+
+  
+
+
+
+
+<tam title="Checkmate" from="Right-Hand Columns" formation="Column RH GBGB">
+  <path>Flip Right[2,1 1.5];Forward 5; Quarter Right[+1 +0]</path>
+  <path>Forward 2;Flip Right[2,1 1.5];Forward 3; Quarter Right[+1 +0]</path>
+  <path>Forward 3; Lead Right[3]; Forward 2[righthand]</path>
+  <path>Forward 3; Lead Right[3]; Forward 2[lefthand]</path>
+</tam>
+
+<tam title="Checkmate" from="Left-Hand Columns" formation="Column LH GBGB">
+  <path>Forward 3; Lead Left[3]; Forward 2[righthand]</path>
+  <path>Forward 3; Lead Left[3]; Forward 2[lefthand]</path>
+  <path>Forward 2;Flip Left[2,1 1.5];Forward 3; Quarter Left[+1 +0]</path>
+  <path>Flip Left[2,1 1.5];Forward 5; Quarter Left[+1 +0]</path>
+</tam>
+
+<tam title="Checkmate" from="Double Pass Thru (DBD)"
+     formation="Double Pass Thru">
+  <path>Extend Left[1 .5];Forward 2;Lead Right[1.5 1.5];Extend Right[2,2 .5]</path>
+  <path>Extend Left[1 .5];Forward 2;Lead Left[.5 .5];Extend Right[2,2 .5]</path>
+  <path>Extend Left[1 .5];Forward 2;Lead Right[1.5 1.5];Extend Right[2,2 .5]</path>
+  <path>Extend Left[1 .5];Forward 2;Lead Left[.5 .5];Extend Right[2,2 .5]</path>
+</tam>
+
+<tam title="Checkmate" from="Completed Double Pass Thru (DBD)"
+     formation="Completed Double Pass Thru">
+  <path>Run Left[2,.5 .5];Extend Right[4,5 2];Quarter Left[+1 +0]</path>
+  <path>Run Right[5,2 2];Forward 5[3];Lead Right</path>
+  <path>Forward 2[2];Run Left[3,-1 +0];Lead Left[3,+2 -2]</path>
+  <path>Forward 2[1.5];Run Right[4.5,2 2];Forward 3;Lead Right</path>
+</tam>
+
+</tamination>

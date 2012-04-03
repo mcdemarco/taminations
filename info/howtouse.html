@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta name="viewport" content="width=device-width" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link type="image/x-icon" href="../favicon.ico" rel="icon" />
+<link href="../tamination.css" type="text/css" rel="stylesheet" />
+<link href="../noscroll.css" type="text/css" rel="stylesheet" />
+<link href="../menus.css" type="text/css" rel="stylesheet" />
+<link href="../jquery-ui.css" rel="stylesheet" />
+<script src="../ext/cookie.js" type="text/javascript"></script>
+<script src="../ext/jquery/jquery-1.7.2.js" type="text/javascript"></script>
+<script src="../ext/jquery/jquery.mousewheel/jquery.mousewheel.3.0.2/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="../menus.js" type="text/javascript"></script>
+<script src="../tampage.js" type="text/javascript"></script>
+<script src="../tamination.js" type="text/javascript"></script>
+<script src="../tamsvg.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $.each(['.animstart','.animprev','.animback','.animplay','.animforward','.animnext','.animend',
+            '.animspeed','.animparts','.animslider','.animdancer','.animhand'
+            ],function(i,cls) {
+      $(cls).mouseover(
+        function() {  $(cls).filter('span').addClass('definition-highlight');
+                      $(cls).filter('div').show(); });
+      $(cls).mouseout(
+        function() {  $(cls).filter('span').removeClass('definition-highlight');
+                      $(cls).filter('div').hide();  } );
+    });
+  });
+</script>
+
+<title>About TAMinations</title>
+</head>
+<body>
+<table summary=""><tr valign="top"><td width="60%">
+<div id="definition">
+<h2>How to use TAMinations</h2>
+<p>
+      This example to the right is just a snapshot image, not a working
+      animation. The square dancers are boys, and the round ones are
+      girls. The orange connections are handholds.</p>
+<p>
+      I try to follow the Callerlab definitions as closely as possible.
+      Some differences you might see are:
+    </p>
+<ul>
+
+<li>
+        The dancers may adjust a bit to finish in standard lines, waves,
+        columns, etc. This is what real dancers do as well.
+      </li>
+
+<li>
+        I try to match the Callerlab timing with the number of tick
+        marks between Start and End, but you might find a few
+        differences.
+      </li>
+
+<li>
+        Handholds are drawn very simply and don't show any styling -
+        hands up, couples, forearm, are all shown the same. Some
+        handholds might not start or end exactly when real dancers
+        would.
+      </li>
+
+</ul>
+I have added ratings to some of the calls,
+<font color="blue">&diams;</font> for common usage,
+<font color="red">&diams;&diams;</font> for less common,
+and &diams;&diams;&diams; for the most difficult.
+These are just my own subjective opinions, based on my
+experience on calls that are used most often and
+calls that give dancers the most difficulty.
+
+
+
+<h3>TAMination Controls and Display</h3>
+<ul>
+
+<li>    <span class="animslider">This slider shows the current position in the animation. You can
+        drag it to change the position.  You can also use the mouse wheel
+        with the SVG animation.</span>
+      </li>
+
+<li>   <span class="animspeed">
+        Drag this slider to vary the speed when the animation is
+        playing. Bottom is snail-paced, top is hot hash.</span><br/>
+        (The SVG animation has Slow/Normal/Fast buttons instead of a slider.)
+      </li>
+
+<li><span class="animparts">
+        Multi-part calls have the different parts numbered here. The
+        tick marks show the beats. All animations start on beat 2.</span>
+      </li>
+
+<li><span class="animstart">Click to go to the start of the animation.</span></li>
+
+<li><span class="animprev">Click to go to the start of the current part.</span></li>
+
+<li><span class="animback">Click to go backward a small amount.</span></li>
+
+<li><span class="animplay">Click to play or stop animation.</span></li>
+
+<li><span class="animforward">Click to go forward a small amount.</span></li>
+
+<li><span class="animnext">Click to go to the start of the next part.</span></li>
+
+<li><span class="animend">Click to go to the end of the animation.</span></li>
+
+<li><span class="animdancer">
+        Square dancers are "boys", circles are
+        "girls". The dark hemisphere show the facing
+        direction. (So this example shows right-handed ocean waves.)</span>
+      </li>
+
+<li><span class="animhand">
+        These orange connectors are handholds. There's no styling -
+        hands up, couples, forearm etc. are all drawn the same.</span>
+      </li>
+
+</ul>
+<h3>Special Features</h3>
+<p>You can access some fun "extras" by right-clicking in the Java animation,
+or selecting the additional buttons on the SVG animation.</p>
+
+<ul>
+<li>
+
+<b>Loop</b>
+        Check to automatically restart the animation when playing.
+      </li>
+
+<li>
+
+<b>Grid</b>
+        Check to show a grid with 1-dancer-size boxes.
+      </li>
+
+<li>
+
+<b>Paths</b>
+        Displays the route dancers take as colored lines.
+      </li>
+
+</ul>The SVG animation has some more features, available by
+shift-clicking on a dancer.<ul>
+
+<li>
+
+<b>Hexagon</b>
+        One dancer is added for every 2 in the starting formation, so 4
+        couples becomes 6 couples. There's an
+        <a href="http://www.tiac.net/~mabaker/hexagon.html">
+          excellent article
+        </a>
+        on this by Clark Baker, and
+        <a href="http://legakis.net/justin/Squares/hex_anim.html">
+          more info and graphics
+        </a>
+        by Justin Legakis
+      </li>
+
+<li>
+<b>Bi-gon</b>
+  This variation removes half the dancers, so 4 couples becomes 2.
+  A <a href="http://www.tiac.net/~mabaker/bigon2.pdf">great article by Sue Curtis</a>
+  is required reading if you want to
+  attempt to understand this.
+</li>
+
+
+<li>
+<b>Barstool</b>
+        This fixes the position of one dancer. The barstool dancer can
+        turn but not move. All the other dancers adjust by moving around
+        the barstool.  Clark Baker has a
+        <a href="http://www.tiac.net/~mabaker/barstool-dancing.html" target="_top">
+          good explanation
+        </a>
+        . In some cases you'll also want to enlarge the dance floor.
+      </li>
+
+<li>
+
+<b>Compass</b>
+        The complement to barstool - one dancer's facing direction is
+        fixed, and the other dancers have to rotate the setup to adjust.
+        I don't know if this has actually been done, it might not be
+        practical especially for 4 couples.
+      </li>
+
+
+<!-- <b>Expand the Dance Floor</b>
+        Sometimes needed to see a barstool animation.
+      </li>  -->
+
+</ul></div>
+</td><td>
+
+<div style="position:relative; top:0px; left:0px">
+<img usemap="#animap" src="svganimation.png" style="border:0" alt=""/><br/>
+<div class="animstart" style="position:absolute; left:0px; top:462px; display:none"><img alt="" src="selectplay.png" /></div>
+<div class="animprev" style="position:absolute; left:54px; top:462px; display: none"><img alt="" src="selectplay.png" /></div>
+<div class="animback" style="position:absolute; left:110px; top:462px; display:none"><img alt="" src="selectplay.png" /></div>
+<div class="animplay" style="position:absolute; left:169px; top:462px; display:none"><img alt="" src="selectplay.png" /></div>
+<div class="animforward" style="position:absolute; left:227px; top:462px; display:none"><img alt="" src="selectplay.png" /></div>
+<div class="animnext" style="position:absolute; left:283px; top:462px; display:none"><img alt="" src="selectplay.png" /></div>
+<div class="animend" style="position:absolute; left:338px; top:462px; display:none"><img alt="" src="selectplay.png" /></div>
+
+<div class="animdancer" style="position:absolute; left:81px; top:169px; display:none"><img alt="" src="selectd1.png" /></div>
+<div class="animdancer" style="position:absolute; left:144px; top:179px; display:none"><img alt="" src="selectd2.png" /></div>
+<div class="animdancer" style="position:absolute; left:209px; top:169px; display:none"><img alt="" src="selectd3.png" /></div>
+<div class="animdancer" style="position:absolute; left:272px; top:180px; display:none"><img alt="" src="selectd4.png" /></div>
+
+<div class="animhand" style="position:absolute; left:112px; top:186px; display:none"><img alt="" src="selecthand.png" /></div>
+<div class="animhand" style="position:absolute; left:176px; top:186px; display:none"><img alt="" src="selecthand.png" /></div>
+<div class="animhand" style="position:absolute; left:240px; top:186px; display:none"><img alt="" src="selecthand.png" /></div>
+<div class="animspeed" style="position:absolute; left:27px; top:409px; display:none"><img alt="" src="selectspeed.png" /></div>
+<div class="animslider" style="position:absolute; left:50px; top:410px; display:none"><img alt="" src="selectslider.png" /></div>
+<div class="animparts" style="position:absolute; left:50px; top:425px; display:none"><img alt="" src="selectparts.png" /></div>
+
+</div>
+<map name="animap">
+  <!-- red boy -->
+  <area class="animdancer" shape="rect" href="#" coords="80,168,111,210" alt=""/>
+  <!-- first handhold -->
+  <area class="animhand" shape="rect" href="#" coords="112,187,143,200" alt=""/>
+  <!-- red girl -->
+  <area class="animdancer" shape="rect" href="#" coords="144,177,175,219" alt=""/>
+  <!-- second handhold -->
+  <area class="animhand" shape="rect" href="#" coords="176,187,207,200" alt=""/>
+  <!-- turquoise girl -->
+  <area class="animdancer" shape="rect" href="#" coords="208,168,239,210" alt=""/>
+  <!-- third handhold -->
+  <area class="animhand" shape="rect" href="#" coords="240,187,271,200" alt=""/>
+  <!-- turquoise boy -->
+  <area class="animdancer" shape="rect" href="#" coords="272,177,303,219" alt=""/>
+  <!-- speed slider -->
+  <area class="animspeed" shape="rect" href="#" coords="27,432,44,448" alt=""/>
+  <!-- slider -->
+  <area class="animslider" shape="rect" href="#" coords="50,409,66,425" alt=""/>
+  <!--  parts  -->
+  <area class="animparts" shape="rect" href="#" coords="59,432,380,452" alt=""/>
+
+  <!-- rewind -->
+  <area class="animstart" shape="rect" href="#" coords="0,462,56,481" alt=""/>
+  <!-- skip back -->
+  <area class="animprev" shape="rect" href="#" coords="57,462,113,481" alt=""/>
+  <!-- move back -->
+  <area class="animback" shape="rect" href="#" coords="114,462,170,481" alt=""/>
+  <!-- play/stop -->
+  <area class="animplay" shape="rect" href="#" coords="171,462,227,481" alt=""/>
+  <!-- move forward -->
+  <area class="animforward" shape="rect" href="#" coords="228,462,284,481" alt=""/>
+  <!-- skip forward -->
+  <area class="animnext" shape="rect" href="#" coords="285,462,341,481" alt=""/>
+  <!-- move to end -->
+  <area class="animend" shape="rect" href="#" coords="342,462,399,481" alt=""/>
+
+</map>
+
+
+<h3>This is a static image of an animation.  Move over each part to highlight what it does.</h3>
+
+</td></tr></table>
+</body>
+</html>

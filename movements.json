@@ -1,0 +1,271 @@
+{
+
+"Stand": { "hands":"both", "beats":1, "cx1":0, "cy1":0, "cx2":0, "cy2":0, "x2":0, "y2":0 },
+
+"Stand Left": { "select":"Stand", "hands":"left" },
+
+"Stand Right": { "select":"Stand", "hands":"right" },
+
+"FinalStand": { "select":"Stand", "hands":"gripboth" },
+
+"Final Left": { "select":"Stand", "hands":"gripleft" },
+
+"Final Right": { "select":"Stand", "hands":"gripright" },
+
+"Forward": { "hands":"no", "beats":1, "cx1":0.333, "cy1":0, "cx2":0.667, "cy2":0, "x2":1, "y2":0 },
+
+"Back": { "hands":"no", "beats":1, "cx1":-0.333, "cy1":0, "cx2":-0.667, "cy2":0, "x2":-1, "y2":0,
+                             "cx3":0.5, "cx4":0.5, "cy4":0, "x4":1, "y4":0 },
+
+"Run Left": { "hands":"no", "beats":3, "cx1":1.333, "cy1":0, "cx2":1.333, "cy2":2, "x2":0, "y2":2 },
+
+"Run Right": { "select":"Run Left", "reflect":-1 },
+
+"U-Turn Left": { "hands":"no", "beats":3, "cx1":0, "cy1":0, "cx2":0, "cy2":0, "x2":0, "y2":0,
+                               "cx3":1.333, "cx4":1.333, "cy4":2, "x4":0, "y4":2 },
+
+"U-Turn Right": { "select":"U-Turn Left", "reflect":-1 },
+
+"Flip Left": { "hands":"no", "beats":3, "cx1":0.1, "cy1":0, "cx2":0.1, "cy2":2, "x2":0, "y2":2,
+                               "cx3":1, "cx4":1, "cy4":2, "x4":0, "y4":2 },
+
+"Flip Right": { "select":"Flip Left", "reflect":-1 },
+
+"Dodge Left": { "hands":"no", "beats":3, "cx1":0, "cy1":0, "cx2":0, "cy2":2, "x2":0, "y2":2,
+                               "cx3":4, "cx4":4, "cy4":1, "x4":8, "y4":1 },
+
+"Dodge Right": { "select":"Dodge Left", "reflect":-1 },
+
+"Extend Left": {  "hands":"no", "beats":1, "cx1":0.5, "cy1":0, "cx2":0.5, "cy2":1, "x2":1, "y2":1,
+                               "cx3":1, "cx4":1, "cy4":0.4, "x4":2, "y4":0.4 },
+
+
+"Extend Right": { "select":"Extend Left", "reflect":-1 },
+
+"Retreat Left": { "hands":"no", "beats":1, "cx1":-0.5, "cy1":0, "cx2":-0.5, "cy2":1, "x2":-1, "y2":1,
+                               "cx3":1, "cx4":1, "cy4":-0.4, "x4":2, "y4":-0.4 },
+
+"Retreat Right": { "select":"Retreat Left", "reflect":-1 },
+
+"Quarter Left": { "hands":"no", "beats":1.5, "cx1":0, "cy1":0, "cx2":0, "cy2":0, "x2":0, "y2":0,
+                                 "cx3":0.55, "cx4":1, "cy4":0.45, "x4":1, "y4":1 },
+
+"Quarter Right": { "select":"Quarter Left", "reflect":-1 },
+
+"Hinge Left": { "hands":"left", "beats":1.5, "cx1":0.55, "cy1":0, "cx2":1, "cy2":0.45, "x2":1, "y2":1 },
+
+"Hinge Right": { "select":"Hinge Left", "reflect":-1 },
+
+"BackHinge Left": { "hands":"left", "beats":1.5, "cx1":-0.55, "cy1":0, "cx2":-1, "cy2":0.45, "x2":-1, "y2":1,
+                                   "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+
+"BackHinge Right": { "select":"BackHinge Left", "reflect":-1 },
+
+"HalfHinge Left": { "hands":"left", "beats":0.75, "cx1":0.265, "cy1":0, "cx2":0.52, "cy2":0.105, "x2":0.707, "y2":0.293 },
+
+"HalfHinge Right": { "select":"HalfHinge Left", "reflect":-1 },
+
+"HalfBackHinge Left": { "hands":"left", "beats":0.75, "cx1":-0.265, "cy1":0, "cx2":-0.52, "cy2":0.105, "x2":-0.707, "y2":0.293,
+                                   "cx3":0.265, "cx4":0.52, "cy4":-0.105, "x4":0.707, "y4":-0.293 },
+
+"HalfBackHinge Right": { "select":"HalfBackHinge Left", "reflect":-1 },
+
+"BackRun Left": { "hands":"left", "beats":3, "cx1":-1.333, "cy1":0, "cx2":-1.333, "cy2":2, "x2":0, "y2":2,
+                                 "cx3":1.333, "cx4":1.333, "cy4":-2, "x4":0, "y4":-2 },
+
+"BackRun Right": { "select":"BackRun Left", "reflect":-1 },
+
+"Fold Left": { "hands":"no", "beats":2, "cx1":1.5, "cy1":0, "cx2":3.5, "cy2":2, "x2":2, "y2":2 },
+
+"Fold Right": { "select":"Fold Left", "reflect":-1 },
+
+"Cross Fold Left": { "hands":"no", "beats":3, "cx1":1.5, "cy1":0, "cx2":2.5, "cy2":4, "x2":2, "y2":4 },
+
+"Cross Fold Right": { "select":"Cross Fold Left", "reflect":-1 },
+
+"Lead Left": { "hands":"no", "beats":1.5, "cx1":0.55, "cy1":0, "cx2":1, "cy2":0.45, "x2":1, "y2":1 },
+
+"Lead Right": { "select":"Lead Left", "reflect":-1 },
+
+"Eighth Left": { "hands":"no", "beats":0.75, "cx1":0, "cy1":0, "cx2":0, "cy2":0, "x2":0, "y2":0,
+                                 "cx3":0.265, "cx4":0.52, "cy4":0.105, "x4":0.707,  "y4":0.293 },
+
+"Eighth Right": { "select":"Eighth Left", "reflect":-1 },
+
+"Lead Left 1/2": { "hands":"no", "beats":0.75, "cx1":0.265, "cy1":0, "cx2":0.520, "cy2":0.105, "x2":0.707, "y2":0.293 },
+
+"Lead Right 1/2": { "select":"Lead Left 1/2", "reflect":-1 },
+
+"Sashay Left": { "hands":"no", "beats":3, "cx1":0.75, "cy1":0, "cx2":0.75, "cy2":2, "x2":0, "y2":2,
+                               "cx3":0, "cx4":0, "cy4":0, "x4":0, "y4":0 },
+
+"Sashay Right": { "select":"Sashay Left", "reflect":-1 },
+
+"BackSashay Left": { "hands":"no", "beats":3, "cx1":-0.75, "cy1":0, "cx2":-0.75, "cy2":2, "x2":0, "y2":2,
+                               "cx3":0, "cx4":0, "cy4":0, "x4":0, "y4":0 },
+
+"BackSashay Right": { "select":"BackSashay Left", "reflect":-1 },
+
+"Sxtnth Left": { "hands":"both", "beats":0.1, "cx1":0, "cy1":0, "cx2":0, "cy2":0, "x2":0, "y2":0,
+                                  "cx3":0.1313, "cx4":0.2614, "cy4":0.0259, "x4":0.3827, "y4":0.0761 },
+
+"Sxtnth Right": { "select":"Sxtnth Left", "reflect":-1 },
+
+"Cross Left": { "hands":"left", "beats":2, "cx1":1, "cy1":0, "cx2":0, "cy2":2, "x2":2, "y2":2,
+                                 "cx3":1, "cx4":1, "cy4":0.4, "x4":2, "y4":0.4 },
+
+"Cross Right": { "select":"Cross Left", "reflect":-1 },
+
+
+"    Counter Rotate":"",
+"    From the dancer's starting position, if the rotation center is":"",
+"    to the left of the dancer, then it's a Counter Rotate Left, else Right":"",
+"    The X and Y numbers are the net change in position":"",
+"Counter rotate turning towards the right with a net forward movement":"",
+
+"Counter Rotate Right 2 0": { "hands":"no", "beats":2, "cx1":0.5, "cy1":0.5, "cx2":1.5, "cy2":0.5, "x2":2, "y2":0,
+                              "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"    Counter rotate turning left with a net forward movement":"",
+"Counter Rotate Left 2 0" : { "select":"Counter Rotate Right 2 0", "reflect":-1},
+"Counter Rotate Left 0 2": { "hands":"no", "beats":2, "cx1":0.5, "cy1":0.5, "cx2":0.5,"cy2":1.5, "x2":0,"y2":2,
+                             "cx3":0.55, "cx4":1, "cy4":0.45, "x4":1, "y4":1 },
+"Counter Rotate Right 0 -2": { "select":"Counter Rotate Left 0 2", "reflect":-1 },
+"Counter Rotate Left 1 2": { "hands":"no", "beats":2, "cx1":0, "cy1":0.5, "cx2":1,"cy2":2, "x2":1,"y2":2,
+                             "cx3":0.55, "cx4":1, "cy4":0.45, "x4":1, "y4":1 },
+"Counter Rotate Right 1 -2" : { "select":"Counter Rotate Left 1 2", "reflect":-1},
+"Counter Rotate Right 0 2": { "hands":"no", "beats":2, "cx1":-0.5, "cy1":0.5, "cx2":-0.5,"cy2":1.5, "x2":0,"y2":2,
+                              "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left 0 -2": { "select":"Counter Rotate Right 0 2", "reflect":-1},
+"Counter Rotate Right 1 2": { "hands":"no", "beats":2, "cx1":0, "cy1":0.5, "cx2":0,"cy2":2, "x2":1,"y2":2,
+                              "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left -2 0": { "hands":"no", "beats":2, "cx1":-0.5, "cy1":0.5, "cx2":-1.5, "cy2":0.5, "x2":-2, "y2":0,
+                             "cx3":0.55, "cx4":1, "cy4":0.45, "x4":1, "y4":1 },
+"Counter Rotate Right -2 0": { "select":"Counter Rotate Left -2 0", "reflect":-1 },
+"Counter Rotate Right 3 1" : { "hands":"no", "beats":2, "cx1":0.5, "cy1":1, "cx2":2, "cy2":1.5, "x2":3, "y2":1,
+                               "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left 3 -1" : { "select":"Counter Rotate Right 3 1", "reflect":-1},
+"Counter Rotate Right 3 -1" : { "hands":"no", "beats":2, "cx1":1, "cy1":1, "cx2":2.5, "cy2":0, "x2":3, "y2":-1,
+                                "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Right 0 3" : { "hands":"no", "beats":2, "cx1":-0.5, "cy1":0.5, "cx2":-1, "cy2":2.5, "x2":0, "y2":3,
+                               "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Right 5 1" : { "hands":"no", "beats":2, "cx1":0.5, "cy1":1, "cx2":4, "cy2":1.5, "x2":5, "y2":1,
+                               "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left 5 -1" : { "select":"Counter Rotate Right 5 1", "reflect":-1},
+"Counter Rotate Right 5 -1" : { "hands":"no", "beats":2, "cx1":1.5, "cy1":1, "cx2":4, "cy2":0.5, "x2":5, "y2":-1,
+                                "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left 5 1" : { "select":"Counter Rotate Right 5 -1", "reflect":-1 },
+"Counter Rotate Right 1 -5" : { "hands":"no", "beats":2, "cx1":1.5, "cy1":-1, "cx2":2, "cy2":-3.5, "x2":1, "y2":-5,
+                                "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left 1 5" : { "select":"Counter Rotate Right 1 -5", "reflect":-1},
+"Counter Rotate Left -1 3" : { "hands":"no", "beats":2, "cx1":0.5, "cy1":1, "cx2":0, "cy2":2.5, "x2":-1, "y2":3,
+                               "cx3":0.55, "cx4":1, "cy4":0.45, "x4":1, "y4":1 },
+"Counter Rotate Right -1 -3" : { "select":"Counter Rotate Left -1 3", "reflect": -1 },
+"Counter Rotate Right 4 2" : { "hands":"no", "beats":2, "cx1":0.5, "cy1":1.5, "cx2":2.5, "cy2":2.5, "x2":4, "y2":2,
+                               "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left 4 -2" : { "select":"Counter Rotate Right 4 2", "reflect":-1 },
+"Counter Rotate Right -2 -4" : { "hands":"no", "beats":2, "cx1":0.5, "cy1":-1.5, "cx2":-0.5, "cy2":-3.5, "x2":-2, "y2":-4,
+                                 "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left -2 4" : { "select":"Counter Rotate Right -2 -4", "reflect":-1 },
+"Counter Rotate Right 4 -2" : { "hands":"no", "beats":2, "cx1":1.5, "cy1":0.5, "cx2":3.5, "cy2":-0.5, "x2":4, "y2":-2,
+                               "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Right 2 -4" : { "hands":"no", "beats":2, "cx1":1.5, "cy1":-0.5, "cx2":2.5, "cy2":-2.5, "x2":2, "y2":-4,
+                                "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+
+"         Useful for turning a circle of four":"",
+"Counter Rotate Left 1 1" : { "hands":"no", "beats":2, "cx1":0, "cy1":0.5, "cx2":0.5,"cy2":1,"x2":1,"y2":1,
+                                "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+"Counter Rotate Left 1.414 1.414" : { "select":"Counter Rotate Left 1 1", "scaleX":1.414, "scaleY":1.414 },
+
+
+"    For circle left and circle right":"",
+"cl": { "hands":"both", "beats":1, "cx1":0.27, "cy1":0.64, "cx2":0.77, "cy2":1.14, "x2":1.41, "y2":1.41,
+                                 "cx3":0.265, "cx4":0.52, "cy4":-0.105, "x4":0.707, "y4":-0.293 },
+
+"cr": { "select":"cl", "reflect":-1 },
+
+"incircle2": { "hands":"both", "beats":1, "cx1":0.3, "cy1":0, "cx2":0.3, "cy2":0, "x2":0.59, "y2":0,
+                                 "cx3":1, "cx4":2, "cy4":1, "x4":3, "y4":2 },
+
+"incircle3": { "select":"incircle2", "reflect":-1 },
+
+"    For single circle to a wave":"",
+"ssqtr": { "hands":"no", "beats":1, "cx1":0, "cy1":0.385, "cx2":0.315, "cy2":0.7, "x2":0.7, "y2":0.7,
+                               "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+
+"    For fractional tops":"",
+"Sxtnth": { "hands":"no", "beats":1.125, "cx1":0.3939, "cy1":0, "cx2":0.7842, "cy2":-0.0777, "x2":1.1481, "y2":-0.2283 },
+
+"H16th": { "hands":"left", "beats":0.375, "cx1":0.1313, "cy1":0, "cx2":0.2614, "cy2":0.0259, "x2":0.3827, "y2":0.0761 },
+
+"    For couples circle left":"",
+"Circle Left Half": { "hands":"gripboth", "beats":3, "cx1":0, "cy1":1.88, "cx2":2.83, "cy2":1.88, "x2":2.83, "y2":0,
+                                     "cx3":1.33, "cx4":1.33, "cy4":-2, "x4":0, "y4":-2 },
+
+"Circle Left Quarter": { "hands":"gripboth", "beats":1.5, "cx1":0, "cy1":0.39, "cx2":0.318, "cy2":0.707, "x2":0.707, "y2":0.707,
+                                       "cx3":0.55, "cx4":1, "cy4":-0.45, "x4":1, "y4":-1 },
+
+"Circle Right Quarter": { "select":"Circle Left Quarter", "reflect":-1 },
+
+"Forward .5": { "select":"Foward", "beats":0.5, "scaleX":0.5 },
+
+"Forward 2": { "select":"Forward", "beats":2, "scaleX":2 },
+
+"Forward 3": { "select":"Forward", "beats":3, "scaleX":3 },
+
+"Forward 4": { "select":"Forward", "beats":4, "scaleX":4 },
+
+"Forward 5": { "select":"Forward", "beats":5, "scaleX":5 },
+
+"Forward 6": { "select":"Forward", "beats":6, "scaleX":6 },
+
+"Back 2": { "select":"Back", "beats":2, "scaleX":2 },
+
+"Slow Forward": { "select":"Forward", "beats":2 },
+
+"Slow Forward 2": { "select":"Forward 2", "beats":3 },
+
+"Extend Left 2": { "select":"Extend Left", "beats":2, "scaleX":2, "scaleY":2 },
+
+"Extend Right 2": { "select":"Extend Left 2", "reflect":-1 },
+
+"Extend Left 4": { "select":"Extend Left", "beats":3, "scaleX":4, "scaleY":4 },
+
+"Extend Right 4": { "select":"Extend Left 4", "reflect":-1 },
+
+"Pull Left": { "select":"Extend Left", "hands":"right" },
+
+"Pull Right": { "select":"Pull Left", "reflect":-1 },
+
+"Pass Thru": [ { "select":"Extend Left", "scaleY":0.5 },
+               { "select":"Extend Right", "scaleY":0.5 } ],
+
+"Swing Left": { "select":"Run Left", "hands":"left" },
+
+"Swing Right": { "select":"Swing Left", "reflect":-1 },
+
+"Cast Left": [ { "select":"Swing Left" },
+               { "select":"Hinge Left" } ],
+
+"Cast Right": { "select":"Cast Left", "reflect":-1 },
+
+"Lead Left 2": { "select":"Lead Left", "beats":3, "scaleX":2, "scaleY":2 },
+
+"Lead Right 2": { "select":"Lead Left 2", "reflect":-1 },
+
+"Lead Left 3": { "select":"Lead Left", "beats":4.5, "scaleX":3, "scaleY":3 },
+
+"Lead Right 3": { "select":"Lead Left 3", "reflect":-1 },
+
+"Pull By": { "select":"Extend Left", "hands":"right" },
+
+"Beau Wheel": { "select":"BackRun Right", "hands":"right" },
+
+"Belle Wheel": { "hands":"left", "beats":3, "cx1":1.333, "cy1":0, "cx2":1.333, "cy2":2, "x2":0, "y2":2,
+                 "cx3":1.333, "cx4":1.333, "cy4":2, "x4":0, "y4":2 },
+
+"Beau Reverse Wheel": { "hands":"right", "beats":3, "cx1":1.333, "cy1":0, "cx2":1.333, "cy2":-2, "x2":0, "y2":-2,
+                        "cx3":1.333, "cx4":1.333, "cy4":-2, "x4":0, "y4":-2 },
+
+"Belle Reverse Wheel": { "select":"BackRun Left", "hands":"left" }
+
+}

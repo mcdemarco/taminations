@@ -1,0 +1,588 @@
+<?xml version="1.0"?>
+<!DOCTYPE tamination SYSTEM "../tamination.dtd">
+<!--
+
+    Copyright 2012 Brad Christie
+
+    This file is part of TAMinations.
+
+    TAMinations is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    TAMinations is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with TAMinations.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<tamination>
+
+  <comment>
+    <p>All 4 Couples / All 8 versions of Advanced and Challenge calls are listed with each call.</p>
+  </comment>
+
+  <tam title="All 4 Couples Chase Right" group="All 4 Couples"
+       from=""
+       formation="Static Facing Out"
+       parts="" >
+    <path numbers="2 7">
+      <move select="Run Right" beats="4" scaleY="2" offsetX="-1" />
+      <move select="Forward 3" />
+      <move select="Extend Right" beats="3" scaleX="2" scaleY="2" />
+    </path>
+    <path numbers="1 8">
+      <move select="Run Right" offsetX="-2" />
+      <move select="Forward 3" />
+      <move select="Run Right" beats="4" scaleY="2" offsetX="1" />
+    </path>
+    <path numbers="3 6">
+      <move select="Run Right" beats="4" scaleY="2" offsetX="-1" />
+      <move select="Forward 3" />
+      <move select="Extend Right" beats="3" scaleX="2" scaleY="2" />
+    </path>
+    <path numbers="5 4">
+      <move select="Run Right" offsetX="-2" />
+      <move select="Forward 3" />
+      <move select="Run Right" beats="4" scaleY="2" offsetX="1" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Extend" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Fan the Top" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" beats="4.5" scaleX="3" scaleY="3" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+      <move select="Cast Left" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" beats="4.5" scaleX="3" scaleY="3" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+      <move select="Cast Left" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Pass Thru" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" />
+      <move select="Lead Left" beats="2" scaleY="2" />
+    </path>
+    <path>
+      <move select="Extend Right" beats="3" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Extend Left" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" />
+      <move select="Lead Left" beats="2" scaleY="2" />
+    </path>
+    <path>
+      <move select="Extend Right" beats="3" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Extend Left" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Pass the Ocean" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" />
+      <move select="Lead Left" />
+      <move select="Lead Right" />
+    </path>
+    <path>
+      <move select="Extend Right" beats="3" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Quarter Left" offsetY="1" />
+      <move select="Extend Left" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" />
+      <move select="Lead Left" />
+      <move select="Lead Right" />
+    </path>
+    <path>
+      <move select="Extend Right" beats="3" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Quarter Left" offsetY="1" />
+      <move select="Extend Left" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Right and Left Thru" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path numbers="1 8">
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" />
+      <move select="Lead Left" beats="2" scaleY="2" />
+      <move select="Beau Wheel" />
+    </path>
+    <path numbers="2 7">
+      <move select="Extend Right" beats="3.5" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Extend Left" />
+      <move select="Belle Wheel" />
+    </path>
+    <path numbers="5 4">
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Lead Right" />
+      <move select="Lead Left" beats="2" scaleY="2" />
+      <move select="Beau Wheel" />
+    </path>
+    <path numbers="3 6">
+      <move select="Extend Right" beats="3.5" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Extend Left" />
+      <move select="Belle Wheel" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Single Circle to a Wave" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="1.5" scaleY="1.5" />
+      <move select="Forward" scaleX="1.3" />
+      <move select="ssqtr" />
+      <move select="ssqtr" />
+      <move select="Extend Left" beats="1.5" scaleX=".7" scaleY="1.5" />
+    </path>
+    <path>
+      <move select="Forward" />
+      <move select="Extend Right" beats="1.5" scaleX="1.3" scaleY="1.5" />
+      <move select="ssqtr" />
+      <move select="ssqtr" />
+      <move select="Extend Left" beats="1.5" scaleX=".7" scaleY=".5" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="1.5" scaleY="1.5" />
+      <move select="Forward" scaleX="1.3" />
+      <move select="ssqtr" />
+      <move select="ssqtr" />
+      <move select="Extend Left" beats="1.5" scaleX=".7" scaleY="1.5" />
+    </path>
+    <path>
+      <move select="Forward" />
+      <move select="Extend Right" beats="1.5" scaleX="1.3" scaleY="1.5" />
+      <move select="ssqtr" />
+      <move select="ssqtr" />
+      <move select="Extend Left" beats="1.5" scaleX=".7" scaleY=".5" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Slide Thru" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Quarter Right" offsetX="1" />
+    </path>
+    <path>
+      <move select="Extend Right" beats="3" scaleX="3" />
+      <move select="Quarter Left" offsetX="1" offsetY="-1" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Quarter Right" offsetX="1" />
+    </path>
+    <path>
+      <move select="Extend Right" beats="3" scaleX="3" />
+      <move select="Quarter Left" offsetX="1" offsetY="-1" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Square Thru" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" hands="right" />
+      <move select="Lead Right" hands="left" beats="4" scaleX="2" scaleY="3" />
+      <move select="Forward 2" />
+      <move select="Lead Right" hands="right" beats="2" scaleY="2" />
+      <move select="Lead Right" hands="left" beats="4" scaleX="2" scaleY="3" />
+      <move select="Forward 2" />
+      <move select="Extend Right" />
+    </path>
+    <path>
+      <move select="Extend Right" hands="right" beats="3" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Lead Left" hands="left" beats="2" scaleY="2" />
+      <move select="Lead Left" hands="right" beats="4" scaleX="2" scaleY="3" />
+      <move select="Forward 2" />
+      <move select="Lead Left" hands="left" beats="2" scaleY="2" />
+      <move select="Lead Left" />
+      <move select="Lead Right" beats="1.5" scaleY="2" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" hands="right" />
+      <move select="Lead Right" hands="left" beats="4" scaleX="2" scaleY="3" />
+      <move select="Forward 2" />
+      <move select="Lead Right" hands="right" beats="2" scaleY="2" />
+      <move select="Lead Right" hands="left" beats="4" scaleX="2" scaleY="3" />
+      <move select="Forward 2" />
+      <move select="Extend Right" />
+    </path>
+    <path>
+      <move select="Extend Right" hands="right" beats="3" scaleX="3" />
+      <move select="Forward 2" />
+      <move select="Lead Left" hands="left" beats="2" scaleY="2" />
+      <move select="Lead Left" hands="right" beats="4" scaleX="2" scaleY="3" />
+      <move select="Forward 2" />
+      <move select="Lead Left" hands="left" beats="2" scaleY="2" />
+      <move select="Lead Left" />
+      <move select="Lead Right" beats="1.5" scaleY="2" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Swing Thru" group="All 4 Couples"
+       from="Static Square"
+       formation="Static Square"
+       parts="" >
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Swing Right" />
+      <move select="Swing Left" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+      <move select="Swing Right" />
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="2" />
+      <move select="Forward" />
+      <move select="Swing Right" />
+      <move select="Swing Left" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+      <move select="Swing Right" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Touch a Quarter" group="All 4 Couples"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path numbers="1 8">
+      <move select="Extend Left" beats="3" scaleX="3" scaleY="2.5" />
+      <move select="Hinge Right" offsetY=".5" />
+    </path>
+    <path numbers="2 7">
+      <move select="Forward" />
+      <move select="Extend Right" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Hinge Right" offsetY="-.5" />
+    </path>
+    <path numbers="5 4">
+      <move select="Extend Left" beats="3" scaleX="3" scaleY="2.5" />
+      <move select="Hinge Right" offsetY=".5" />
+    </path>
+    <path numbers="3 6">
+      <move select="Forward" />
+      <move select="Extend Right" beats="2" scaleX="2" scaleY=".5" />
+      <move select="Hinge Right" offsetY="-.5" />
+    </path>
+  </tam>
+
+  <tam title="All 4 Couples Turn Thru" group="All 4 Couples"
+       formation="Static Square">
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="1.5"/>
+      <move select="Forward"/>
+      <move select="Swing Right" scaleX=".5" scaleY=".5"/>
+      <move select="Forward"/>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5"/>
+    </path>
+    <path>
+      <move select="Forward"/>
+      <move select="Extend Right" beats="2" scaleX="2" scaleY=".5"/>
+      <move select="Swing Right" scaleX=".5" scaleY=".5"/>
+      <move select="Extend Right" beats="2" scaleY="1.5"/>
+      <move select="Forward 2"/>
+    </path>
+    <path>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY="1.5"/>
+      <move select="Forward"/>
+      <move select="Swing Right" scaleX=".5" scaleY=".5"/>
+      <move select="Forward"/>
+      <move select="Extend Left" beats="2" scaleX="2" scaleY=".5"/>
+    </path>
+    <path>
+      <move select="Forward"/>
+      <move select="Extend Right" beats="2" scaleX="2" scaleY=".5"/>
+      <move select="Swing Right" scaleX=".5" scaleY=".5"/>
+      <move select="Extend Right" beats="2" scaleY="1.5"/>
+      <move select="Forward 2"/>
+    </path>
+  </tam>
+
+  <tam title="All 8 Dixie Style to a Wave" group="All 8"
+       from=""
+       formation="Static Square"
+       parts="" >
+    <path numbers="1 8">
+      <move select="Quarter Right" beats="5" offsetY="-1" />
+      <move select="Swing Left" />
+    </path>
+    <path numbers="2 7">
+      <move select="Extend Left" hands="right" beats="3" scaleX="3" scaleY="2" />
+      <move select="Lead Right" hands="right" beats="2" scaleX="1.5" />
+      <move select="Swing Left" scaleY=".75" />
+    </path>
+    <path numbers="5 4">
+      <move select="Quarter Right" beats="5" offsetY="-1" />
+      <move select="Swing Left" />
+    </path>
+    <path numbers="3 6">
+      <move select="Extend Left" hands="right" beats="3" scaleX="3" scaleY="2" />
+      <move select="Lead Right" hands="right" beats="2" scaleX="1.5" />
+      <move select="Swing Left" scaleY=".75" />
+    </path>
+  </tam>
+
+  <tam title="All 8 Follow Your Neighbor" group="All 8"
+       from=""
+       formation="Static MiniWaves RH"
+       parts="" >
+    <path>
+      <move select="Forward 3" />
+      <move select="Cast Right" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="2.5" offsetX=".33" />
+      <move select="Lead Right" beats="2.5" offsetY=".33" />
+      <move select="Lead Right" beats="2.5" offsetX="-.33" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+      <move select="Cast Right" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="2.5" offsetX=".33" />
+      <move select="Lead Right" beats="2.5" offsetY=".33" />
+      <move select="Lead Right" beats="2.5" offsetX="-.33" />
+    </path>
+  </tam>
+
+  <tam title="All 8 Follow Your Neighbor and Spread" group="All 8"
+       from=""
+       formation="Static MiniWaves RH"
+       parts="" >
+    <path>
+      <move select="Forward 3" />
+      <move select="Swing Right" />
+      <move select="Lead Right" beats="3" scaleX="3" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="3" offsetX="-.33" />
+      <move select="Lead Right" beats="3" offsetY="-.33" />
+      <move select="Lead Right" beats="3" offsetX=".33" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+      <move select="Swing Right" />
+      <move select="Lead Right" beats="3" scaleX="3" />
+    </path>
+    <path>
+      <move select="Lead Right" beats="3" offsetX="-.33" />
+      <move select="Lead Right" beats="3" offsetY="-.33" />
+      <move select="Lead Right" beats="3" offsetX=".33" />
+    </path>
+  </tam>
+
+  <tam title="All 8 Peel Off" group="All 8"
+       from=""
+       formation="Static MiniWaves RH"
+       parts="" >
+    <path>
+      <move select="U-Turn Left" beats="4" offsetX="3" />
+    </path>
+    <path>
+      <move select="Run Left" beats="4" offsetX="-3" />
+    </path>
+    <path>
+      <move select="U-Turn Left" beats="4" offsetX="3" />
+    </path>
+    <path>
+      <move select="Run Left" beats="4" offsetX="-3" />
+    </path>
+  </tam>
+
+  <tam title="All 8 Peel the Top" group="All 8"
+       from=""
+       formation="Static MiniWaves RH"
+       parts="" >
+    <path>
+      <move select="Forward 3" beats="4" />
+      <move select="Cast Right" />
+    </path>
+    <path>
+      <move select="Run Left" beats="4" offsetX="-3" />
+      <move select="Lead Left" beats="4.5" scaleX="3" scaleY="3" />
+    </path>
+    <path>
+      <move select="Forward 3" beats="4" />
+      <move select="Cast Right" />
+    </path>
+    <path>
+      <move select="Run Left" beats="4" offsetX="-3" />
+      <move select="Lead Left" beats="4.5" scaleX="3" scaleY="3" />
+    </path>
+  </tam>
+
+  <tam title="All 8 Scoot Back" group="All 8"
+       from=""
+       formation="Static MiniWaves RH"
+       parts="" >
+    <path>
+      <move select="Forward 3" />
+      <move select="Swing Right" />
+      <move select="Forward 3" />
+    </path>
+    <path>
+      <move select="Run Right" />
+    </path>
+    <path>
+      <move select="Forward 3" />
+      <move select="Swing Right" />
+      <move select="Forward 3" />
+    </path>
+    <path>
+      <move select="Run Right" />
+    </path>
+  </tam>
+
+  <tam title="All 8 Swing Thru" group="All 8"
+       formation="Thar LH Boys">
+    <path numbers="6 7">
+      <move select="Swing Right"/>
+    </path>
+    <path numbers="5 8">
+      <move select="Swing Right"/>
+      <move select="Swing Left"/>
+    </path>
+    <path numbers="3 2">
+      <move select="Swing Right"/>
+    </path>
+    <path numbers="4 1">
+      <move select="Swing Right"/>
+      <move select="Swing Left"/>
+    </path>
+  </tam>
+
+  <tam title="All 8 Veer Left" group="All 8" formation="Static Square">
+    <path>
+      <move select="Extend Left" beats="4" scaleX="3" scaleY="2" hands="right"/>
+    </path>
+    <path>
+      <move select="Extend Left" beats="4" scaleX="3" scaleY="2" hands="left"/>
+    </path>
+    <path>
+      <move select="Extend Left" beats="4" scaleX="3" scaleY="2" hands="right"/>
+    </path>
+    <path>
+      <move select="Extend Left" beats="4" scaleX="3" scaleY="2" hands="left"/>
+    </path>
+  </tam>
+
+  <tam title="All 8 Walk and Dodge" group="All 8"
+       from=""
+       formation="Static MiniWaves RH"
+       parts="" >
+    <path numbers="1 8">
+      <move select="Forward 3"/>
+      <move select="Forward 3"/>
+    </path>
+    <path numbers="2 7">
+      <move select="Dodge Right"/>
+    </path>
+    <path numbers="5 4">
+      <move select="Forward 3"/>
+      <move select="Forward 3"/>
+    </path>
+    <path numbers="3 6">
+      <move select="Dodge Right"/>
+    </path>
+  </tam>
+
+  <tam title="All 8 Zoom" group="All 8"
+       from=""
+       formation="Static MiniWaves RH"
+       parts="" >
+    <path>
+      <move select="Forward 3" beats="4"/>
+      <move select="Forward 3" beats="4"/>
+    </path>
+    <path>
+      <move select="Run Left" beats="4" offsetX="-3"/>
+      <move select="Run Left" beats="4" offsetX="3"/>
+    </path>
+    <path>
+      <move select="Forward 3" beats="4"/>
+      <move select="Forward 3" beats="4"/>
+    </path>
+    <path>
+      <move select="Run Left" beats="4" offsetX="-3"/>
+      <move select="Run Left" beats="4" offsetX="3"/>
+    </path>
+  </tam>
+
+</tamination>
