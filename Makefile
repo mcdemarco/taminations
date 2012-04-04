@@ -19,32 +19,45 @@
 
 # This makefile builds the JAR file needed to load taminations by the Java applet
 # and the zip file that's available for download
+# This requires JAVA_HOME set to an installed jdk
+
+#  If the current directory contains a colon, we're most likely on a windows machine
+ifeq '$(findstring :,$(CURDIR))' ':'
+RM = del
+else
+RM = rm
+endif
+JAVA = $(JAVA_HOME)/bin/java
+JAVAC = $(JAVA_HOME)/bin/javac
+JAR = $(JAVA_HOME)/bin/jar
 
 .phony : all
-all : TAMination.jar tamination.zip callindex.json
+all : TAMination.jar tamination.zip # callindex.json
 	@echo Build complete
 
 unzip :
-	cd ext/jquery && jar xvf jquery.mobile-1.0.1.zip
-	cd ext/jquery/jquery.mousewheel && jar xvf jquery.mousewheel.3.0.2.zip
-	cd ext/jquery/jquery.svg && jar xvf jquery.svg.package-1.4.4.zip
-	cd ext/jquery/jquery.ui && jar xvf jquery-ui-1.8.18.custom.zip
+	cd ext/jquery && $(JAR) xvf jquery.mobile-1.0.1.zip
+	cd ext/jquery/jquery.mousewheel && $(JAR) xvf jquery.mousewheel.3.0.2.zip
+	cd ext/jquery/jquery.svg && $(JAR) xvf jquery.svg.package-1.4.4.zip
+	cd ext/jquery/jquery.ui && $(JAR) xvf jquery-ui-1.8.18.custom.zip
 
 #  Clean target to delete jar and zip
 .phony : clean
 clean :
-	-del tamination.zip
-	-del *.class *.jar
+	-$(RM) tamination.zip
+	-$(RM) *.class *.jar
 
 #  Make the JAR file.  Tell the compiler to compile for Java 1.3 for maximum compatibility
 TAMination.jar : TAMination.java
-	javac -source 1.3 -target 1.3 -classpath c:\programs\java\jre6\lib\plugin.jar TAMination.java && jar -cf TAMination.jar *.class
+	$(JAVAC) -source 1.3 -target 1.3 -classpath $(JAVA_HOME)/jre/lib/plugin.jar TAMination.java && $(JAR) -cf TAMination.jar *.class
 
 #  Make the zip file.  Exclude my Eclipse project files which are not of interest to others.
+#  The wildcard * pattern apparently conveniently excludes .* files
 tamination.zip : $(filter-out tamination.zip,$(wildcard * */*))
-	-del tamination.zip
-	cd .. && c:\cygwin17\bin\zip -q -r tamination/tamination.zip tamination -x */.* */.*/* */.*/
+	-$(RM) tamination.zip
+	$(JAR) cf tamination.zip $(wildcard *)
 
 #  Make the index of calls
+#  This is for a future project, not used by the current animations
 callindex.json : $(wildcard */*.xml)
 	python indexcalls.py >$@
