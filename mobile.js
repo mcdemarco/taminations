@@ -9,6 +9,7 @@ $(document).bind('mobileinit',function()
   {
     $.mobile.page.prototype.options.headerTheme = "d";
     $.mobile.listview.prototype.options.headerTheme = "d";
+    $.mobile.defaultPageTransition = "none";
   });
 
 $(document).delegate('#level','pagecreate',
@@ -17,46 +18,70 @@ $(document).delegate('#level','pagecreate',
     // Build menus for level and call selection
     for (var level in tamination_menu) {
       var a = tamination_menu[level];
-      if (a.title.match(/Info|General|Styling/))
+      if (a.title.match(/Info/))
         continue;
-      var html = '<li data-theme="c" data-icon="arrow-r">'+ a.title +
-      '<ul id="'+a.title+'" data-role="listview"></ul></li>';
-      $('#levelslist').append(html);
-      for (var call in a.menu) {
-        var b = a.menu[call];
-        var htmlpage = encodeURIComponent(b.link);
-        var xmlpage = htmlpage.replace('html','xml');
-        callnamedict[xmlpage] = b.text;
-        var html = '<li><a href="#animlistpage+'+htmlpage+'">'+b.text+'</li>';
-        $('#'+a.title).append(html);
+      if (a.title.match(/General|Styling/)) {
+	  var html = '<li data-theme="c" data-icon="arrow-r">'+ a.title +
+	      '<ul id="'+a.title+'" data-role="listview"></ul></li>';
+	  $('#levelslist').append(html);
+	  for (var call in a.menu) {
+	      var b = a.menu[call];
+	      var htmlpage = encodeURIComponent(b.link);
+	      var xmlpage = htmlpage.replace('html','xml');
+	      callnamedict[xmlpage] = b.text;
+	      var html = '<li><a href="#defonlypage+'+htmlpage+'">'+b.text+'</li>';
+	      $('#'+a.title).append(html);
+	  }
+      } else {
+	  var html = '<li data-theme="c" data-icon="arrow-r">'+ a.title +
+	      '<ul id="'+a.title+'" data-role="listview"></ul></li>';
+	  $('#levelslist').append(html);
+	  for (var call in a.menu) {
+	      var b = a.menu[call];
+	      var htmlpage = encodeURIComponent(b.link);
+	      var xmlpage = htmlpage.replace('html','xml');
+	      callnamedict[xmlpage] = b.text;
+	      var html = '<li><a href="#animlistpage+'+htmlpage+'">'+b.text+'</li>';
+	      $('#'+a.title).append(html);
+	  }
       }
     }
     //  Add the functions for the buttons.
     //  Do it here because it should only be done once.
+    $('p').bind('tap',function(event,ui) {
+	    $.mobile.zoom.enable( true );
+    });
+    $('#animationcontent').bind('tap',function(event,ui) {
+	    $.mobile.zoom.enable( true );
+    });
     $('#rewindButton').bind('tap',function(event,ui) {
+	    $.mobile.zoom.disable( true );
       tamsvg.rewind();
     });
     $('#backButton').bind('tap',function(event,ui) {
+	    $.mobile.zoom.disable( true );
       tamsvg.backward();
     });
     $('#playButton').bind('tap',function(event,ui) {
+	    $.mobile.zoom.disable( true );
       tamsvg.play();
       $('#playButton').button('refresh');
     });
     $('#forwardButton').bind('tap',function(event,ui) {
+	    $.mobile.zoom.disable( true );
       tamsvg.forward();
     });
     $('#endButton').bind('tap',function(event,ui) {
+	    $.mobile.zoom.disable( true );
       tamsvg.end();
     });
     $('#optionsButton').bind('tap',function(event,ui) {
       $.mobile.changePage('#optionspage');
+      $('#optionsButton').button('refresh');
     });
     $('#defButton').bind('tap',function(event,ui) {
       $.mobile.changePage('#definitionpage');
-    });
-    $('#calltitle').bind('tap',function(event,ui) {
-      $.mobile.changePage('#definitionpage');
+      $('#defButton').button('refresh');
     });
     $('#slowButton').bind('change',function(event,ui) {
       tamsvg.slow();
@@ -104,18 +129,34 @@ $(document).delegate('#level','pagecreate',
 
 //  Fetch xml that lists the animations for a specific call
 //  Then build a menu
+function loaddef(options,htmlpage)
+{
+  if (htmlpage.length > 0) {
+        $.ajax({url:decodeURIComponent(htmlpage), datatype:'html', success:function(a) {
+          $('#defonlycontent').empty().append(a.match(/<body>((.|\n|\s|\S)*)<\/body>/)[1]);
+          repairDefinition(htmlpage,'#defonlycontent');
+	}});
+  }
+  var xmlpage = htmlpage.replace('html','xml');
+  $('#uncalltitle').empty().text(callnamedict[xmlpage]);
+  $.mobile.changePage($('#defonlypage'),options);
+}
+
+//  Fetch xml that lists the animations for a specific call
+//  Then build a menu
 function loadcall(options,htmlpage)
 {
+    $.mobile.zoom.enable( true );
   if (htmlpage.length > 0) {
     $.ajax({url:decodeURIComponent(htmlpage), datatype:'xml', success:function(a) {
       if ($('body',a).size() > 0) {
-        $('#definitioncontent').empty().append($('body',a).children());
-        repairDefinition(htmlpage);
+	  $('#definitioncontent').empty().append($('body',a).children());
+	  repairDefinition(htmlpage,'#definitioncontent');
       }
       else {
         $.ajax({url:decodeURIComponent(htmlpage), datatype:'html', success:function(a) {
-          $('#definitioncontent').empty().append(a.match(/<body>((.|\n)*)<\/body>/)[1]);
-          repairDefinition(htmlpage);
+          $('#definitioncontent').empty().append(a.match(/<body>((.|\n|\s|\S)*)<\/body>/)[1]);
+          repairDefinition(htmlpage,'#definitioncontent');
         }});
       }
     }});
@@ -127,7 +168,7 @@ function loadcall(options,htmlpage)
       var page = $('#animlistpage');
       var content = page.children(":jqmData(role=content)");
       content.empty();
-      var html = '<ul data-role="listview">';
+      var html = '<ul data-role="listview" data-inset="true">';
       $("tam",animations).each(function(n) {
         var callname = $(this).attr('title') + 'from' + $(this).attr('from');
         var name = $(this).attr('from');
@@ -164,22 +205,23 @@ function loadcall(options,htmlpage)
     $.mobile.changePage($('#animlistpage'),options);
 }
 
-function repairDefinition(htmlpage)
+function repairDefinition(htmlpage,contentdiv)
 {
   // Append copyright
-  $('#definitioncontent').append(getCopyright(htmlpage));
+  $(contentdiv).append(getCopyright(htmlpage));
   //  Repair image locations
-  $('#definitioncontent img').each(function(i) {
+  $(contentdiv + ' img').each(function(i) {
     $(this).attr('src',htmlpage.match(/(.*)%/)[1]+'/'+$(this).attr('src'));
   });
   //  Strip out any links
-  $('#definitioncontent a').each(function(i) {
+  $(contentdiv + ' a').each(function(i) {
     $(this).replaceWith($(this).text());
   });
 }
 
 $(document).bind('pagebeforechange',function(e,data)
 {
+    //console.log("bound pagebeforechange being called.");
   if (typeof tamsvg == 'object') {
     tamsvg.stop();
     //$('#playButton').button('refresh');
@@ -194,6 +236,11 @@ $(document).bind('pagebeforechange',function(e,data)
       else
         loadcall(data.options,xmlpage);
       e.preventDefault();
+    }
+    else if (u.hash.indexOf('#defonlypage') == 0) {
+	htmlpage = u.hash.substring(13);
+	loaddef(data.options,htmlpage);
+	e.preventDefault();
     }
     else if (u.hash.indexOf('#animation') == 0) {
       n = u.hash.substring(11);
@@ -311,7 +358,7 @@ function bindControls()
   $('#animslider').attr('max',Math.floor(tamsvg.beats*100));
   tamsvg.animationStopped = function()
   {
-    $('#playButton').attr('value','Play').button('refresh');
+      $('#playButton').attr('value','Play').button('refresh');
   }
   //$('#animslider').change(function()
   //  {

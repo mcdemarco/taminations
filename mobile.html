@@ -1,19 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
+
+<html manifest="tamination.appcache">
 
 <head>
 <meta http-equiv="Content-Language" content="en-us" />
 <meta name="viewport" content="width=device-width" initial-scale="1" />
+<!-- additions -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" sizes="114x114" href="images/acey-deucy-114x114.png" />
+<link rel="apple-touch-startup-image" href="images/acey-deucy-320x460.png" />
+<!-- end additions -->
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link href="ext/jquery/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.css" type="text/css" rel="stylesheet" />
 <link href="ext/jquery/jquery.mobile-1.0.1/jquery.mobile.structure-1.0.1.min.css" type="text/css" rel="stylesheet" />
+<link href="ext/jquery/jquery.mobile/jquery.mobile-1.1.0-rc.1.min.css" type="text/css" rel="stylesheet" />
 <link href="tamination-mobile.css" type="text/css" rel="stylesheet" />
 <title>Taminations</title>
-<script src="ext/jquery/jquery-1.7.1.js" type="text/javascript"></script>
+<script src="ext/jquery/jquery-1.7.1.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="menus.js"></script>
 <script src="mobile.js" type="text/javascript"></script>
-<script src="ext/jquery/jquery.mobile-1.0.1/jquery.mobile-1.0.1.min.js" type="text/javascript"></script>
+<script src="ext/jquery/jquery.mobile/jquery.mobile-1.1.0-rc.1.min.js" type="text/javascript"></script>
 <script src="ext/cookie.js" type="text/javascript"></script>
 <script src="tamination.js" type="text/javascript"></script>
 <script src="ext/jquery/jquery.svg/jquery.svg.js" type="text/javascript"></script>
@@ -34,6 +41,9 @@
   padding-left: 0;
   padding-right: 0;
 }
+div#playButtons div div {
+  border-radius: 0!important;
+}
 </style>
 </head>
 
@@ -48,24 +58,32 @@
     </div>
     <div data-role="content" data-theme="b">
 
-<h2>Welcome to TAMinations</h2>
-<p>TAMinations are the Square Dance animations of the
-<a href="../index.html">Tam Twirlers Square Dance Club</a>.
-Here you will find animations for calls from Mainstream through C3A.
-Most calls have several animations from different starting positions.
-TAMinations are written and maintained by
-<a href="mailto:brad@bradchristie.com">Brad Christie</a>.<br/> <br/></p>
+<h2>Welcome to Taminations</h2>
 
-      <ul data-role="listview" id="levelslist">
+<p>This is a modified version of the mobile 
+<a href="http://www.tamtwirlers.org/tamination/mobile.html">TAMinations</a> Square Dance
+animations intended for offline use as an iOS web app.
+See the <a href="#infopage">info page</a> for more details.<br/> <br/></p>
+
+      <ul data-role="listview" id="levelslist" data-inset="true">
       </ul>
     </div>
+  </div>
+
+  <!-- Page to show a non-animation -->
+  <div data-role="page" id="defonlypage">
+    <div data-role="header" class="header" data-theme="d">
+      <h1 id="uncalltitle"></h1>
+      <a href="#level" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse">Back</a>
+    </div>
+    <div data-role="content" id="defonlycontent"></div>
   </div>
 
   <!-- Page to select an animation -->
   <div data-role="page" id="animlistpage">
     <div data-role="header" class="header" data-theme="d">
       <h1 id="calltitle"></h1>
-      <a href="#level" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+      <a href="#level" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse">Back</a>
       <a href="#infopage" data-icon="info" data-iconpos="notext">Info</a>
     </div>
     <div data-role="content"></div>
@@ -75,36 +93,48 @@ TAMinations are written and maintained by
   <div data-role="page" id="animationpage">
     <div data-role="header" class="header" data-theme="d" id="animheader">
       <h1 id="animtitle"></h1>
-      <a href="#level" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+      <a href="#animlistpage" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse">Back</a>
       <a href="#infopage" data-icon="info" data-iconpos="notext">Info</a>
     </div>
     <div data-role="content" id="animationcontent" style="margin:0 auto; padding:0"></div>
     <form action="#" method="get" id="animform">
-      <div data-role="fieldcontain" class="ui-hide-label" style="width:90%; padding-left:3%; margin:0">
-        <label for="animslider">Slider:</label>
-        <input type="range" name="animslider" id="animslider" value="-200" min="-200" max="100" data-theme="d" />
-        <div style="height:2em">
-        <div id="playslidertics" style="position: relative; height:1em; width:100%"></div>
-        <div id="playsliderlabels" style="position: relative; height:1em; width:100%"></div></div>
-      </div>
-        <fieldset data-role="controlgroup" class="ui-grid-d" style="margin:0">
+
+        <div data-role="controlgroup" class="ui-grid-d" data-theme="d" style="margin:0" id="playButtons">
           <div class="ui-block-a"><input type="button" id="rewindButton" data-theme="d" value="&lt;&lt;" /></div>
           <div class="ui-block-b"><input type="button" id="backButton" data-theme="d" value="&lt;"/></div>
           <div class="ui-block-c"><input type="button" value="Play" data-theme="d" id="playButton"/></div>
           <div class="ui-block-d"><input type="button" id="forwardButton" data-theme="d" value="&gt;"/></div>
           <div class="ui-block-e"><input type="button" id="endButton" data-theme="d" value="&gt;&gt;"/></div>
-        </fieldset>
-        <fieldset data-role="controlgroup" class="ui-grid-a" style="margin:0">
-          <div class="ui-block-a"><input type="button" id="optionsButton" value="Options"/></div>
-          <div class="ui-block-b"><input type="button" id="defButton" value="Definition"/></div>
-        </fieldset>
+        </div>
+
+      <div class="ui-hide-label" style="width:80%; margin-left:10%; padding-top:7px;padding-bottom:15px;">
+        <label for="animslider">Slider:</label>
+        <input type="range" name="animslider" id="animslider" value="-200" min="-200" max="100" data-theme="d" />
+      <!--
+      <div style="height:2em">
+
+        <div id="playslidertics" style="position: relative; height:1em; width:100%"></div>
+        <div id="playsliderlabels" style="position: relative; height:1em; width:100%"></div></div>
+      -->
+      </div>
+
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#optionspage" id="optionsButton">Options</a></li>
+          <li><a href="#definitionpage" id="defButton">Definition</a></li>
+        </ul>
+      </div>
     </form>
   </div>
 
   <!-- Page to show definition -->
   <div data-role="page" id="definitionpage">
-    <div data-role="content" id="definitioncontent" style="background-color: #fff8f0">
+    <div data-role="header" class="header" data-theme="d">
       <h1>Definition</h1>
+      <a href="#animationpage" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse">Back</a>
+    </div>
+    <div data-role="content" id="definitioncontent" style="background-color: #fff8f0">
+	  <p>The current call definition will appear here.</p>
     </div>
   </div>
 
@@ -112,11 +142,13 @@ TAMinations are written and maintained by
   <div data-role="page" id="optionspage">
     <div data-role="header" class="header" data-theme="d">
       <h1>Options</h1>
+      <a href="#animationpage" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse">Back</a>
     </div>
     <div data-role="content">
-      <form action="#" method="get">
-      <div data-role="fieldcontain">
+     <form action="#" method="get">
+      <div data-role="fieldcontain" style="padding-top:0;">
         <fieldset data-role="controlgroup" data-type="horizontal">
+          <!--legend>Animation speed:</legend-->
           <input type="radio" name="speedButton" id="slowButton" value="slow"/>
           <label for="slowButton">Slow</label>
           <input type="radio" name="speedButton" id="normalButton" value="normal"/>
@@ -124,9 +156,10 @@ TAMinations are written and maintained by
           <input type="radio" name="speedButton" id="fastButton" value="fast"/>
           <label for="fastButton">Fast</label>
         </fieldset>
-      <div data-role="fieldcontain">
-        <input type="checkbox" name="loopButton" id="loopButton"/>
-        <label for="loopButton">Loop</label>
+	<!--Type:-->
+        <fieldset data-role="controlgroup">
+          <input type="checkbox" name="loopButton" id="loopButton"/>
+          <label for="loopButton">Loop</label>
         <input type="checkbox" name="gridButton" id="gridButton"/>
         <label for="gridButton">Grid</label>
         <input type="checkbox" name="pathsButton" id="pathsButton"/>
@@ -135,11 +168,13 @@ TAMinations are written and maintained by
         <label for="numbersButton">Numbers</label>
         <input type="checkbox" name="hexagonButton" id="hexagonButton"/>
         <label for="hexagonButton">Hexagon</label>
-        <input type="checkbox" name="bigonButton" id="bigonButton"/>
-        <label for="bigonButton">Bi-gon</label>
+          <input type="checkbox" name="bigonButton" id="bigonButton"/>
+          <label for="bigonButton">Bi-gon</label>
+        </fieldset>
+<!--        <a href="#animationpage" data-role="button" data-rel="back">Done</a>
+<div style="height: 2em;"></div> -->
       </div>
-      <a href="#animationpage" data-role="button" data-rel="back">Done</a>
-      </div></form>
+     </form>
     </div>
   </div>
 
@@ -147,14 +182,34 @@ TAMinations are written and maintained by
   <div data-role="page" id="infopage">
     <div data-role="header" class="header" data-theme="d">
       <h1>About TAMinations</h1>
-      <a href="#level" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>
+      <a href="#" data-icon="arrow-l" data-iconpos="notext" data-rel="back" data-direction="back">Back</a>
     </div>
     <div data-role="content">
-<p> TAMinations  Copyright 2012 by Brad Christie.<br/>
+
+
+<p>TAMinations are the Square Dance animations of the
+<a href="http://www.tamtwirlers.org/">Tam Twirlers Square Dance Club</a>.
+Here you will find animations for calls from Mainstream through C3A.
+Most calls have several animations from different starting positions.
+TAMinations are written and maintained by
+<a href="mailto:brad@bradchristie.com">Brad Christie</a>.</p>
+
+<hr />
+
+<p>This modified <a href="http://www.apple.com/webapps/whatarewebapps.html">iOS web app</a> version
+was created by
+<a href="http://mcdemarco.net">M. C. DeMarco</a> in March 2012.
+To use the app offline, open it first in Safari for iOS and click Safari's "Add to Home Page" button.
+You must be online the first time you run the app from its Home Page link.</p>
+
+<hr />
+
+<p> TAMinations is Copyright 2012 by <a href="mailto:brad@bradchristie.com">Brad Christie</a>.<br/>
     This is free software, and you are welcome to modify and redistribute it
-    under the terms of the <a href="license.html">GNU Affero license</a>.
+    under the terms of the <a href="http://www.tamtwirlers.org/tamination/license.html">GNU Affero license</a>.
 </p>
-<p>Call definitions Copyright by <a href="http://www.callerlab.org/">Callerlab Inc.</a>,
+<p>
+Call definitions Copyright by <a href="http://www.callerlab.org/">Callerlab Inc.</a>,
 The International Association of Square Dance Callers.
 </p>
     <h2>Known Problems</h2>
