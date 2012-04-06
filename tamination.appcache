@@ -1160,14 +1160,9 @@ callindex.json
 embed.html
 ext/cookie.js
 ext/jquery/jquery-1.7.1.js
-ext/jquery/jquery.mobile/jquery.mobile-1.1.0-rc.1.min.css
-ext/jquery/jquery.mobile/jquery.mobile-1.1.0-rc.1.min.js
-ext/jquery/jquery.mobile-1.0.1/jquery.mobile.structure-1.0.1.min.css
-ext/jquery/jquery.mobile/images/ajax-loader.png
-ext/jquery/jquery.mobile/images/icons-18-black.png
-ext/jquery/jquery.mobile/images/icons-18-white.png
-ext/jquery/jquery.mobile/images/icons-36-black.png
-ext/jquery/jquery.mobile/images/icons-36-white.png
+ext/jquery/jquery.mobile/jquery.mobile-1.0.1.min.css
+ext/jquery/jquery.mobile/jquery.mobile-1.0.1.min.js
+ext/jquery/jquery.mobile/jquery.mobile.structure-1.0.1.min.css
 ext/jquery/jquery.mousewheel/jquery.mousewheel.min.js
 ext/jquery/jquery.svg/blank.svg
 ext/jquery/jquery.svg/jquery.svg.compat-1.0.1.js

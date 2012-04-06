@@ -48,31 +48,20 @@ $(document).delegate('#level','pagecreate',
     }
     //  Add the functions for the buttons.
     //  Do it here because it should only be done once.
-    $('p').bind('tap',function(event,ui) {
-	    $.mobile.zoom.enable( true );
-    });
-    $('#animationcontent').bind('tap',function(event,ui) {
-	    $.mobile.zoom.enable( true );
-    });
     $('#rewindButton').bind('tap',function(event,ui) {
-	    $.mobile.zoom.disable( true );
       tamsvg.rewind();
     });
     $('#backButton').bind('tap',function(event,ui) {
-	    $.mobile.zoom.disable( true );
       tamsvg.backward();
     });
     $('#playButton').bind('tap',function(event,ui) {
-	    $.mobile.zoom.disable( true );
       tamsvg.play();
       $('#playButton').button('refresh');
     });
     $('#forwardButton').bind('tap',function(event,ui) {
-	    $.mobile.zoom.disable( true );
       tamsvg.forward();
     });
     $('#endButton').bind('tap',function(event,ui) {
-	    $.mobile.zoom.disable( true );
       tamsvg.end();
     });
     $('#optionsButton').bind('tap',function(event,ui) {
@@ -146,7 +135,6 @@ function loaddef(options,htmlpage)
 //  Then build a menu
 function loadcall(options,htmlpage)
 {
-    $.mobile.zoom.enable( true );
   if (htmlpage.length > 0) {
     $.ajax({url:decodeURIComponent(htmlpage), datatype:'xml', success:function(a) {
       if ($('body',a).size() > 0) {
