@@ -1,2 +1,6 @@
+# MacOS cruft
 .DS_Store
-.~
+# Emacs backup files
+*~
+# Emacs file locks
+.#*.~
