@@ -1156,6 +1156,7 @@ c3a/wind_the_bobbin.html
 c3a/wind_the_bobbin.xml
 c3a/wrap_to_a_formation.html
 c3a/wrap_to_a_formation.xml
+callindex.json
 embed.html
 ext/cookie.js
 ext/jquery/jquery-1.7.1.js
@@ -1192,8 +1193,14 @@ ext/jquery/jquery.svg/jquery.svgplot.pack.js
 ext/jquery/jquery.svg/lion.svg
 ext/jquery/jquery.svg/svgBasics.html
 favicon.ico
+formations.json
 images/acey-deucy-114x114.png
 images/acey-deucy-320x460.png
+images/ajax-loader.png
+images/icons-18-black.png
+images/icons-18-white.png
+images/icons-36-black.png
+images/icons-36-white.png
 index.html
 license.html
 license.txt
@@ -1201,6 +1208,7 @@ menus.css
 menus.js
 mobile.html
 mobile.js
+movements.json
 ms/all_around_the_corner.html
 ms/all_around_the_corner.xml
 ms/allemande.html
